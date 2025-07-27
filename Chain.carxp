@@ -1,0 +1,8628 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE CARLA-PROJECT>
+<CARLA-PROJECT VERSION='2.5'>
+ <EngineSettings>
+  <ForceStereo>false</ForceStereo>
+  <PreferPluginBridges>false</PreferPluginBridges>
+  <PreferUiBridges>true</PreferUiBridges>
+  <UIsAlwaysOnTop>false</UIsAlwaysOnTop>
+  <MaxParameters>200</MaxParameters>
+  <UIBridgesTimeout>4000</UIBridgesTimeout>
+ </EngineSettings>
+
+ <Transport>
+  <BeatsPerMinute>120</BeatsPerMinute>
+ </Transport>
+
+ <!-- LSP Expander Mono -->
+ <Plugin>
+  <Info>
+   <Type>LV2</Type>
+   <Name>LSP Expander Mono</Name>
+   <URI>http://lsp-plug.in/plugins/lv2/expander_mono</URI>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x1</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Enabled</Name>
+    <Symbol>enabled</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Input gain</Name>
+    <Symbol>g_in</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>Output gain</Name>
+    <Symbol>g_out</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>3</Index>
+    <Name>Pause graph analysis</Name>
+    <Symbol>pause</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>4</Index>
+    <Name>Clear graph analysis</Name>
+    <Symbol>clear</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>5</Index>
+    <Name>Sidechain mode</Name>
+    <Symbol>scm</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>6</Index>
+    <Name>Sidechain lookahead</Name>
+    <Symbol>sla</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>7</Index>
+    <Name>Sidechain listen</Name>
+    <Symbol>scl</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>8</Index>
+    <Name>Sidechain reactivity</Name>
+    <Symbol>scr</Symbol>
+    <Value>10</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>9</Index>
+    <Name>Sidechain preamp</Name>
+    <Symbol>scp</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>10</Index>
+    <Name>High-pass filter mode</Name>
+    <Symbol>shpm</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>11</Index>
+    <Name>High-pass filter frequency</Name>
+    <Symbol>shpf</Symbol>
+    <Value>10</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>12</Index>
+    <Name>Low-pass filter mode</Name>
+    <Symbol>slpm</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>13</Index>
+    <Name>Low-pass filter frequency</Name>
+    <Symbol>slpf</Symbol>
+    <Value>20000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>14</Index>
+    <Name>Expander mode</Name>
+    <Symbol>em</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>15</Index>
+    <Name>Attack threshold</Name>
+    <Symbol>al</Symbol>
+    <Value>0.00100000004749745</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>16</Index>
+    <Name>Attack time</Name>
+    <Symbol>at</Symbol>
+    <Value>30</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>17</Index>
+    <Name>Release threshold</Name>
+    <Symbol>rrl</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>18</Index>
+    <Name>Release time</Name>
+    <Symbol>rt</Symbol>
+    <Value>90</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>19</Index>
+    <Name>Ratio</Name>
+    <Symbol>er</Symbol>
+    <Value>3</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>20</Index>
+    <Name>Knee</Name>
+    <Symbol>kn</Symbol>
+    <Value>0.0631000027060509</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>21</Index>
+    <Name>Makeup gain</Name>
+    <Symbol>mk</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>22</Index>
+    <Name>Dry gain</Name>
+    <Symbol>cdr</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>23</Index>
+    <Name>Wet gain</Name>
+    <Symbol>cwt</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>25</Index>
+    <Name>Sidechain level visibility</Name>
+    <Symbol>slv</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>26</Index>
+    <Name>Envelope level visibility</Name>
+    <Symbol>elv</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>27</Index>
+    <Name>Gain reduction visibility</Name>
+    <Symbol>grv</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>28</Index>
+    <Name>Input level visibility</Name>
+    <Symbol>ilv</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>29</Index>
+    <Name>Output level visibility</Name>
+    <Symbol>olv</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/property</Type>
+    <Key>CarlaSkinIsCompacted</Key>
+    <Value>false</Value>
+   </CustomData>
+  </Data>
+ </Plugin>
+
+ <!-- Calf Tape Simulator -->
+ <Plugin>
+  <Info>
+   <Type>LV2</Type>
+   <Name>Calf Tape Simulator</Name>
+   <URI>http://calf.sourceforge.net/plugins/TapeSimulator</URI>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x3f1</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Bypass</Name>
+    <Symbol>bypass</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Input Gain</Name>
+    <Symbol>level_in</Symbol>
+    <Value>0.248617544770241</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>Output Gain</Name>
+    <Symbol>level_out</Symbol>
+    <Value>0.497235000133514</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>11</Index>
+    <Name>Mix</Name>
+    <Symbol>mix</Symbol>
+    <Value>0.899999976158142</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>12</Index>
+    <Name>Filter</Name>
+    <Symbol>lowpass</Symbol>
+    <Value>12500</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>13</Index>
+    <Name>Speed Simulation</Name>
+    <Symbol>speed</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>14</Index>
+    <Name>Noise</Name>
+    <Symbol>noise</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>15</Index>
+    <Name>Mechanical</Name>
+    <Symbol>mechanical</Symbol>
+    <Value>0.0499999970197678</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>16</Index>
+    <Name>Magnetical</Name>
+    <Symbol>magnetical</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>17</Index>
+    <Name>Post-Filter</Name>
+    <Symbol>post</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/property</Type>
+    <Key>CarlaSkinIsCompacted</Key>
+    <Value>false</Value>
+   </CustomData>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/property</Type>
+    <Key>CarlaSkin</Key>
+    <Value>default</Value>
+   </CustomData>
+  </Data>
+ </Plugin>
+
+ <!-- LSP Parametric Equalizer x8 Stereo -->
+ <Plugin>
+  <Info>
+   <Type>LV2</Type>
+   <Name>LSP Parametric Equalizer x8 Stereo</Name>
+   <URI>http://lsp-plug.in/plugins/lv2/para_equalizer_x8_stereo</URI>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x1</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Enabled</Name>
+    <Symbol>enabled</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Input gain</Name>
+    <Symbol>g_in</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>Output gain</Name>
+    <Symbol>g_out</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>3</Index>
+    <Name>Equalizer mode</Name>
+    <Symbol>mode</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>4</Index>
+    <Name>FFT reactivity</Name>
+    <Symbol>react</Symbol>
+    <Value>0.200000002980232</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>5</Index>
+    <Name>Shift gain</Name>
+    <Symbol>shift</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>6</Index>
+    <Name>Graph zoom</Name>
+    <Symbol>zoom</Symbol>
+    <Value>0.0158500000834465</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>7</Index>
+    <Name>Filter select</Name>
+    <Symbol>fsel</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>8</Index>
+    <Name>Inspected filter identifier</Name>
+    <Symbol>insp_id</Symbol>
+    <Value>-1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>9</Index>
+    <Name>Inspect frequency range</Name>
+    <Symbol>insp_r</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>10</Index>
+    <Name>Automatically inspect filter when editing</Name>
+    <Symbol>insp_on</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>11</Index>
+    <Name>Input FFT graph enable Left</Name>
+    <Symbol>ife_l</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>12</Index>
+    <Name>Output FFT graph enable Left</Name>
+    <Symbol>ofe_l</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>13</Index>
+    <Name>Input FFT graph enable Right</Name>
+    <Symbol>ife_r</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>14</Index>
+    <Name>Output FFT graph enable Right</Name>
+    <Symbol>ofe_r</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>15</Index>
+    <Name>Output balance</Name>
+    <Symbol>bal</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>16</Index>
+    <Name>Frequency shift</Name>
+    <Symbol>frqs</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>21</Index>
+    <Name>Filter type 0</Name>
+    <Symbol>ft_0</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>22</Index>
+    <Name>Filter mode 0</Name>
+    <Symbol>fm_0</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>23</Index>
+    <Name>Filter slope 0</Name>
+    <Symbol>s_0</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>24</Index>
+    <Name>Filter solo 0</Name>
+    <Symbol>xs_0</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>25</Index>
+    <Name>Filter mute 0</Name>
+    <Symbol>xm_0</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>26</Index>
+    <Name>Frequency 0</Name>
+    <Symbol>f_0</Symbol>
+    <Value>400</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>27</Index>
+    <Name>Filter Width 0</Name>
+    <Symbol>w_0</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>28</Index>
+    <Name>Gain 0</Name>
+    <Symbol>g_0</Symbol>
+    <Value>0.707945764064789</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>29</Index>
+    <Name>Quality factor 0</Name>
+    <Symbol>q_0</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>30</Index>
+    <Name>Hue 0</Name>
+    <Symbol>hue_0</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>32</Index>
+    <Name>Filter type 1</Name>
+    <Symbol>ft_1</Symbol>
+    <Value>3</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>33</Index>
+    <Name>Filter mode 1</Name>
+    <Symbol>fm_1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>34</Index>
+    <Name>Filter slope 1</Name>
+    <Symbol>s_1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>35</Index>
+    <Name>Filter solo 1</Name>
+    <Symbol>xs_1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>36</Index>
+    <Name>Filter mute 1</Name>
+    <Symbol>xm_1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>37</Index>
+    <Name>Frequency 1</Name>
+    <Symbol>f_1</Symbol>
+    <Value>6500</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>38</Index>
+    <Name>Filter Width 1</Name>
+    <Symbol>w_1</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>39</Index>
+    <Name>Gain 1</Name>
+    <Symbol>g_1</Symbol>
+    <Value>1.41253757476807</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>40</Index>
+    <Name>Quality factor 1</Name>
+    <Symbol>q_1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>41</Index>
+    <Name>Hue 1</Name>
+    <Symbol>hue_1</Symbol>
+    <Value>0.125</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>43</Index>
+    <Name>Filter type 2</Name>
+    <Symbol>ft_2</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>44</Index>
+    <Name>Filter mode 2</Name>
+    <Symbol>fm_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>45</Index>
+    <Name>Filter slope 2</Name>
+    <Symbol>s_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>46</Index>
+    <Name>Filter solo 2</Name>
+    <Symbol>xs_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>47</Index>
+    <Name>Filter mute 2</Name>
+    <Symbol>xm_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>48</Index>
+    <Name>Frequency 2</Name>
+    <Symbol>f_2</Symbol>
+    <Value>60</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>49</Index>
+    <Name>Filter Width 2</Name>
+    <Symbol>w_2</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>50</Index>
+    <Name>Gain 2</Name>
+    <Symbol>g_2</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>51</Index>
+    <Name>Quality factor 2</Name>
+    <Symbol>q_2</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>52</Index>
+    <Name>Hue 2</Name>
+    <Symbol>hue_2</Symbol>
+    <Value>0.25</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>54</Index>
+    <Name>Filter type 3</Name>
+    <Symbol>ft_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>55</Index>
+    <Name>Filter mode 3</Name>
+    <Symbol>fm_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>56</Index>
+    <Name>Filter slope 3</Name>
+    <Symbol>s_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>57</Index>
+    <Name>Filter solo 3</Name>
+    <Symbol>xs_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>58</Index>
+    <Name>Filter mute 3</Name>
+    <Symbol>xm_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>59</Index>
+    <Name>Frequency 3</Name>
+    <Symbol>f_3</Symbol>
+    <Value>250</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>60</Index>
+    <Name>Filter Width 3</Name>
+    <Symbol>w_3</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>61</Index>
+    <Name>Gain 3</Name>
+    <Symbol>g_3</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>62</Index>
+    <Name>Quality factor 3</Name>
+    <Symbol>q_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>63</Index>
+    <Name>Hue 3</Name>
+    <Symbol>hue_3</Symbol>
+    <Value>0.375</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>65</Index>
+    <Name>Filter type 4</Name>
+    <Symbol>ft_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>66</Index>
+    <Name>Filter mode 4</Name>
+    <Symbol>fm_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>67</Index>
+    <Name>Filter slope 4</Name>
+    <Symbol>s_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>68</Index>
+    <Name>Filter solo 4</Name>
+    <Symbol>xs_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>69</Index>
+    <Name>Filter mute 4</Name>
+    <Symbol>xm_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>70</Index>
+    <Name>Frequency 4</Name>
+    <Symbol>f_4</Symbol>
+    <Value>630</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>71</Index>
+    <Name>Filter Width 4</Name>
+    <Symbol>w_4</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>72</Index>
+    <Name>Gain 4</Name>
+    <Symbol>g_4</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>73</Index>
+    <Name>Quality factor 4</Name>
+    <Symbol>q_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>74</Index>
+    <Name>Hue 4</Name>
+    <Symbol>hue_4</Symbol>
+    <Value>0.5</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>76</Index>
+    <Name>Filter type 5</Name>
+    <Symbol>ft_5</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>77</Index>
+    <Name>Filter mode 5</Name>
+    <Symbol>fm_5</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>78</Index>
+    <Name>Filter slope 5</Name>
+    <Symbol>s_5</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>79</Index>
+    <Name>Filter solo 5</Name>
+    <Symbol>xs_5</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>80</Index>
+    <Name>Filter mute 5</Name>
+    <Symbol>xm_5</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>81</Index>
+    <Name>Frequency 5</Name>
+    <Symbol>f_5</Symbol>
+    <Value>1600</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>82</Index>
+    <Name>Filter Width 5</Name>
+    <Symbol>w_5</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>83</Index>
+    <Name>Gain 5</Name>
+    <Symbol>g_5</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>84</Index>
+    <Name>Quality factor 5</Name>
+    <Symbol>q_5</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>85</Index>
+    <Name>Hue 5</Name>
+    <Symbol>hue_5</Symbol>
+    <Value>0.625</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>87</Index>
+    <Name>Filter type 6</Name>
+    <Symbol>ft_6</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>88</Index>
+    <Name>Filter mode 6</Name>
+    <Symbol>fm_6</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>89</Index>
+    <Name>Filter slope 6</Name>
+    <Symbol>s_6</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>90</Index>
+    <Name>Filter solo 6</Name>
+    <Symbol>xs_6</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>91</Index>
+    <Name>Filter mute 6</Name>
+    <Symbol>xm_6</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>92</Index>
+    <Name>Frequency 6</Name>
+    <Symbol>f_6</Symbol>
+    <Value>4000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>93</Index>
+    <Name>Filter Width 6</Name>
+    <Symbol>w_6</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>94</Index>
+    <Name>Gain 6</Name>
+    <Symbol>g_6</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>95</Index>
+    <Name>Quality factor 6</Name>
+    <Symbol>q_6</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>96</Index>
+    <Name>Hue 6</Name>
+    <Symbol>hue_6</Symbol>
+    <Value>0.75</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>98</Index>
+    <Name>Filter type 7</Name>
+    <Symbol>ft_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>99</Index>
+    <Name>Filter mode 7</Name>
+    <Symbol>fm_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>100</Index>
+    <Name>Filter slope 7</Name>
+    <Symbol>s_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>101</Index>
+    <Name>Filter solo 7</Name>
+    <Symbol>xs_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>102</Index>
+    <Name>Filter mute 7</Name>
+    <Symbol>xm_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>103</Index>
+    <Name>Frequency 7</Name>
+    <Symbol>f_7</Symbol>
+    <Value>10000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>104</Index>
+    <Name>Filter Width 7</Name>
+    <Symbol>w_7</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>105</Index>
+    <Name>Gain 7</Name>
+    <Symbol>g_7</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>106</Index>
+    <Name>Quality factor 7</Name>
+    <Symbol>q_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>107</Index>
+    <Name>Hue 7</Name>
+    <Symbol>hue_7</Symbol>
+    <Value>0.875</Value>
+   </Parameter>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/property</Type>
+    <Key>CarlaSkinIsCompacted</Key>
+    <Value>false</Value>
+   </CustomData>
+  </Data>
+ </Plugin>
+
+ <!-- LSP Mixer x4 Stereo -->
+ <Plugin>
+  <Info>
+   <Type>LV2</Type>
+   <Name>LSP Mixer x4 Stereo</Name>
+   <URI>http://lsp-plug.in/plugins/lv2/mixer_x4_stereo</URI>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x1</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Enabled</Name>
+    <Symbol>enabled</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Mono output</Name>
+    <Symbol>mono</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>Output balance</Name>
+    <Symbol>bal</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>3</Index>
+    <Name>Dry amount</Name>
+    <Symbol>dry</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>4</Index>
+    <Name>Wet amount</Name>
+    <Symbol>wet</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>5</Index>
+    <Name>Output gain</Name>
+    <Symbol>g_out</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>10</Index>
+    <Name>Channel solo 1</Name>
+    <Symbol>cs_1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>11</Index>
+    <Name>Channel mute 1</Name>
+    <Symbol>cm_1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>12</Index>
+    <Name>Channel phase invert 1</Name>
+    <Symbol>ci_1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>13</Index>
+    <Name>Channel pan left 1</Name>
+    <Symbol>cp_1l</Symbol>
+    <Value>-100</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>14</Index>
+    <Name>Channel pan right 1</Name>
+    <Symbol>cp_1r</Symbol>
+    <Value>-100</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>15</Index>
+    <Name>Channel output balance 1</Name>
+    <Symbol>cb_1</Symbol>
+    <Value>-100</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>16</Index>
+    <Name>Channel gain 1</Name>
+    <Symbol>cg_1</Symbol>
+    <Value>0.354813367128372</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>19</Index>
+    <Name>Channel solo 2</Name>
+    <Symbol>cs_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>20</Index>
+    <Name>Channel mute 2</Name>
+    <Symbol>cm_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>21</Index>
+    <Name>Channel phase invert 2</Name>
+    <Symbol>ci_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>22</Index>
+    <Name>Channel pan left 2</Name>
+    <Symbol>cp_2l</Symbol>
+    <Value>-100</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>23</Index>
+    <Name>Channel pan right 2</Name>
+    <Symbol>cp_2r</Symbol>
+    <Value>100</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>24</Index>
+    <Name>Channel output balance 2</Name>
+    <Symbol>cb_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>25</Index>
+    <Name>Channel gain 2</Name>
+    <Symbol>cg_2</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>28</Index>
+    <Name>Channel solo 3</Name>
+    <Symbol>cs_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>29</Index>
+    <Name>Channel mute 3</Name>
+    <Symbol>cm_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>30</Index>
+    <Name>Channel phase invert 3</Name>
+    <Symbol>ci_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>31</Index>
+    <Name>Channel pan left 3</Name>
+    <Symbol>cp_3l</Symbol>
+    <Value>-100</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>32</Index>
+    <Name>Channel pan right 3</Name>
+    <Symbol>cp_3r</Symbol>
+    <Value>100</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>33</Index>
+    <Name>Channel output balance 3</Name>
+    <Symbol>cb_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>34</Index>
+    <Name>Channel gain 3</Name>
+    <Symbol>cg_3</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>37</Index>
+    <Name>Channel solo 4</Name>
+    <Symbol>cs_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>38</Index>
+    <Name>Channel mute 4</Name>
+    <Symbol>cm_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>39</Index>
+    <Name>Channel phase invert 4</Name>
+    <Symbol>ci_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>40</Index>
+    <Name>Channel pan left 4</Name>
+    <Symbol>cp_4l</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>41</Index>
+    <Name>Channel pan right 4</Name>
+    <Symbol>cp_4r</Symbol>
+    <Value>100</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>42</Index>
+    <Name>Channel output balance 4</Name>
+    <Symbol>cb_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>43</Index>
+    <Name>Channel gain 4</Name>
+    <Symbol>cg_4</Symbol>
+    <Value>0.125892534852028</Value>
+   </Parameter>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/property</Type>
+    <Key>CarlaSkinIsCompacted</Key>
+    <Value>false</Value>
+   </CustomData>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/property</Type>
+    <Key>CarlaSkin</Key>
+    <Value>default</Value>
+   </CustomData>
+  </Data>
+ </Plugin>
+
+ <!-- LSP Sidechain Multiband Compressor Stereo x8 -->
+ <Plugin>
+  <Info>
+   <Type>LV2</Type>
+   <Name>LSP Sidechain Multiband Compressor Stereo x8</Name>
+   <URI>http://lsp-plug.in/plugins/lv2/sc_mb_compressor_stereo</URI>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x1</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Enabled</Name>
+    <Symbol>enabled</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Compressor mode</Name>
+    <Symbol>mode</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>Input gain</Name>
+    <Symbol>g_in</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>3</Index>
+    <Name>Output gain</Name>
+    <Symbol>g_out</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>4</Index>
+    <Name>Dry gain</Name>
+    <Symbol>g_dry</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>5</Index>
+    <Name>Wet gain</Name>
+    <Symbol>g_wet</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>6</Index>
+    <Name>FFT reactivity</Name>
+    <Symbol>react</Symbol>
+    <Value>0.200000002980232</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>7</Index>
+    <Name>Shift gain</Name>
+    <Symbol>shift</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>8</Index>
+    <Name>Graph zoom</Name>
+    <Symbol>zoom</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>9</Index>
+    <Name>Envelope boost</Name>
+    <Symbol>envb</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>10</Index>
+    <Name>Band selection</Name>
+    <Symbol>bsel</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>11</Index>
+    <Name>Band filter curves</Name>
+    <Symbol>flt</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>12</Index>
+    <Name>Stereo split</Name>
+    <Symbol>ssplit</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>13</Index>
+    <Name>Input FFT graph enable Left</Name>
+    <Symbol>ife_l</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>14</Index>
+    <Name>Output FFT graph enable Left</Name>
+    <Symbol>ofe_l</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>17</Index>
+    <Name>Input FFT graph enable Right</Name>
+    <Symbol>ife_r</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>18</Index>
+    <Name>Output FFT graph enable Right</Name>
+    <Symbol>ofe_r</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>21</Index>
+    <Name>Compression band enable 1</Name>
+    <Symbol>cbe_1</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>22</Index>
+    <Name>Split frequency 1</Name>
+    <Symbol>sf_1</Symbol>
+    <Value>32</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>23</Index>
+    <Name>Compression band enable 2</Name>
+    <Symbol>cbe_2</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>24</Index>
+    <Name>Split frequency 2</Name>
+    <Symbol>sf_2</Symbol>
+    <Value>64</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>25</Index>
+    <Name>Compression band enable 3</Name>
+    <Symbol>cbe_3</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>26</Index>
+    <Name>Split frequency 3</Name>
+    <Symbol>sf_3</Symbol>
+    <Value>256</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>27</Index>
+    <Name>Compression band enable 4</Name>
+    <Symbol>cbe_4</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>28</Index>
+    <Name>Split frequency 4</Name>
+    <Symbol>sf_4</Symbol>
+    <Value>512</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>29</Index>
+    <Name>Compression band enable 5</Name>
+    <Symbol>cbe_5</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>30</Index>
+    <Name>Split frequency 5</Name>
+    <Symbol>sf_5</Symbol>
+    <Value>2048</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>31</Index>
+    <Name>Compression band enable 6</Name>
+    <Symbol>cbe_6</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>32</Index>
+    <Name>Split frequency 6</Name>
+    <Symbol>sf_6</Symbol>
+    <Value>4096</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>33</Index>
+    <Name>Compression band enable 7</Name>
+    <Symbol>cbe_7</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>34</Index>
+    <Name>Split frequency 7</Name>
+    <Symbol>sf_7</Symbol>
+    <Value>8192</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>35</Index>
+    <Name>External sidechain enable 0</Name>
+    <Symbol>sce_0</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>36</Index>
+    <Name>Sidechain source 0</Name>
+    <Symbol>scs_0</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>37</Index>
+    <Name>Split sidechain source 0</Name>
+    <Symbol>sscs_0</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>38</Index>
+    <Name>Sidechain mode 0</Name>
+    <Symbol>scm_0</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>39</Index>
+    <Name>Sidechain lookahead 0</Name>
+    <Symbol>sla_0</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>40</Index>
+    <Name>Sidechain reactivity 0</Name>
+    <Symbol>scr_0</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>41</Index>
+    <Name>Sidechain preamp 0</Name>
+    <Symbol>scp_0</Symbol>
+    <Value>3.98107171058655</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>42</Index>
+    <Name>Sidechain custom lo-cut 0</Name>
+    <Symbol>sclc_0</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>43</Index>
+    <Name>Sidechain custom hi-cut 0</Name>
+    <Symbol>schc_0</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>44</Index>
+    <Name>Sidechain lo-cut frequency 0</Name>
+    <Symbol>sclf_0</Symbol>
+    <Value>10</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>45</Index>
+    <Name>Sidechain hi-cut frequency 0</Name>
+    <Symbol>schf_0</Symbol>
+    <Value>500</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>46</Index>
+    <Name>Compression mode 0</Name>
+    <Symbol>cm_0</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>47</Index>
+    <Name>Compressor enable 0</Name>
+    <Symbol>ce_0</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>48</Index>
+    <Name>Solo band 0</Name>
+    <Symbol>bs_0</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>49</Index>
+    <Name>Mute band 0</Name>
+    <Symbol>bm_0</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>50</Index>
+    <Name>Attack threshold 0</Name>
+    <Symbol>al_0</Symbol>
+    <Value>0.251188635826111</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>51</Index>
+    <Name>Attack time 0</Name>
+    <Symbol>at_0</Symbol>
+    <Value>24</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>52</Index>
+    <Name>Release threshold 0</Name>
+    <Symbol>rrl_0</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>53</Index>
+    <Name>Release time 0</Name>
+    <Symbol>rt_0</Symbol>
+    <Value>96</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>54</Index>
+    <Name>Ratio 0</Name>
+    <Symbol>cr_0</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>55</Index>
+    <Name>Knee 0</Name>
+    <Symbol>kn_0</Symbol>
+    <Value>0.0631000027060509</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>56</Index>
+    <Name>Boost threshold 0</Name>
+    <Symbol>bth_0</Symbol>
+    <Value>0.000251188554102555</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>57</Index>
+    <Name>Boost signal amount 0</Name>
+    <Symbol>bsa_0</Symbol>
+    <Value>3.98107171058655</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>58</Index>
+    <Name>Makeup gain 0</Name>
+    <Symbol>mk_0</Symbol>
+    <Value>0.501187264919281</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>59</Index>
+    <Name>Hue  0</Name>
+    <Symbol>hue_0</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>62</Index>
+    <Name>External sidechain enable 1</Name>
+    <Symbol>sce_1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>63</Index>
+    <Name>Sidechain source 1</Name>
+    <Symbol>scs_1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>64</Index>
+    <Name>Split sidechain source 1</Name>
+    <Symbol>sscs_1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>65</Index>
+    <Name>Sidechain mode 1</Name>
+    <Symbol>scm_1</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>66</Index>
+    <Name>Sidechain lookahead 1</Name>
+    <Symbol>sla_1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>67</Index>
+    <Name>Sidechain reactivity 1</Name>
+    <Symbol>scr_1</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>68</Index>
+    <Name>Sidechain preamp 1</Name>
+    <Symbol>scp_1</Symbol>
+    <Value>3.98107171058655</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>69</Index>
+    <Name>Sidechain custom lo-cut 1</Name>
+    <Symbol>sclc_1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>70</Index>
+    <Name>Sidechain custom hi-cut 1</Name>
+    <Symbol>schc_1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>71</Index>
+    <Name>Sidechain lo-cut frequency 1</Name>
+    <Symbol>sclf_1</Symbol>
+    <Value>500</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>72</Index>
+    <Name>Sidechain hi-cut frequency 1</Name>
+    <Symbol>schf_1</Symbol>
+    <Value>1000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>73</Index>
+    <Name>Compression mode 1</Name>
+    <Symbol>cm_1</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>74</Index>
+    <Name>Compressor enable 1</Name>
+    <Symbol>ce_1</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>75</Index>
+    <Name>Solo band 1</Name>
+    <Symbol>bs_1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>76</Index>
+    <Name>Mute band 1</Name>
+    <Symbol>bm_1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>77</Index>
+    <Name>Attack threshold 1</Name>
+    <Symbol>al_1</Symbol>
+    <Value>0.251188635826111</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>78</Index>
+    <Name>Attack time 1</Name>
+    <Symbol>at_1</Symbol>
+    <Value>24</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>79</Index>
+    <Name>Release threshold 1</Name>
+    <Symbol>rrl_1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>80</Index>
+    <Name>Release time 1</Name>
+    <Symbol>rt_1</Symbol>
+    <Value>96</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>81</Index>
+    <Name>Ratio 1</Name>
+    <Symbol>cr_1</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>82</Index>
+    <Name>Knee 1</Name>
+    <Symbol>kn_1</Symbol>
+    <Value>0.0631000027060509</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>83</Index>
+    <Name>Boost threshold 1</Name>
+    <Symbol>bth_1</Symbol>
+    <Value>0.000251188554102555</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>84</Index>
+    <Name>Boost signal amount 1</Name>
+    <Symbol>bsa_1</Symbol>
+    <Value>3.98107171058655</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>85</Index>
+    <Name>Makeup gain 1</Name>
+    <Symbol>mk_1</Symbol>
+    <Value>0.501187264919281</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>86</Index>
+    <Name>Hue  1</Name>
+    <Symbol>hue_1</Symbol>
+    <Value>0.125</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>89</Index>
+    <Name>External sidechain enable 2</Name>
+    <Symbol>sce_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>90</Index>
+    <Name>Sidechain source 2</Name>
+    <Symbol>scs_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>91</Index>
+    <Name>Split sidechain source 2</Name>
+    <Symbol>sscs_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>92</Index>
+    <Name>Sidechain mode 2</Name>
+    <Symbol>scm_2</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>93</Index>
+    <Name>Sidechain lookahead 2</Name>
+    <Symbol>sla_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>94</Index>
+    <Name>Sidechain reactivity 2</Name>
+    <Symbol>scr_2</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>95</Index>
+    <Name>Sidechain preamp 2</Name>
+    <Symbol>scp_2</Symbol>
+    <Value>3.98107171058655</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>96</Index>
+    <Name>Sidechain custom lo-cut 2</Name>
+    <Symbol>sclc_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>97</Index>
+    <Name>Sidechain custom hi-cut 2</Name>
+    <Symbol>schc_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>98</Index>
+    <Name>Sidechain lo-cut frequency 2</Name>
+    <Symbol>sclf_2</Symbol>
+    <Value>1000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>99</Index>
+    <Name>Sidechain hi-cut frequency 2</Name>
+    <Symbol>schf_2</Symbol>
+    <Value>2000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>100</Index>
+    <Name>Compression mode 2</Name>
+    <Symbol>cm_2</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>101</Index>
+    <Name>Compressor enable 2</Name>
+    <Symbol>ce_2</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>102</Index>
+    <Name>Solo band 2</Name>
+    <Symbol>bs_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>103</Index>
+    <Name>Mute band 2</Name>
+    <Symbol>bm_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>104</Index>
+    <Name>Attack threshold 2</Name>
+    <Symbol>al_2</Symbol>
+    <Value>0.251188635826111</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>105</Index>
+    <Name>Attack time 2</Name>
+    <Symbol>at_2</Symbol>
+    <Value>24</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>106</Index>
+    <Name>Release threshold 2</Name>
+    <Symbol>rrl_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>107</Index>
+    <Name>Release time 2</Name>
+    <Symbol>rt_2</Symbol>
+    <Value>96</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>108</Index>
+    <Name>Ratio 2</Name>
+    <Symbol>cr_2</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>109</Index>
+    <Name>Knee 2</Name>
+    <Symbol>kn_2</Symbol>
+    <Value>0.0631000027060509</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>110</Index>
+    <Name>Boost threshold 2</Name>
+    <Symbol>bth_2</Symbol>
+    <Value>0.000251188554102555</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>111</Index>
+    <Name>Boost signal amount 2</Name>
+    <Symbol>bsa_2</Symbol>
+    <Value>3.98107171058655</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>112</Index>
+    <Name>Makeup gain 2</Name>
+    <Symbol>mk_2</Symbol>
+    <Value>0.501187264919281</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>113</Index>
+    <Name>Hue  2</Name>
+    <Symbol>hue_2</Symbol>
+    <Value>0.25</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>116</Index>
+    <Name>External sidechain enable 3</Name>
+    <Symbol>sce_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>117</Index>
+    <Name>Sidechain source 3</Name>
+    <Symbol>scs_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>118</Index>
+    <Name>Split sidechain source 3</Name>
+    <Symbol>sscs_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>119</Index>
+    <Name>Sidechain mode 3</Name>
+    <Symbol>scm_3</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>120</Index>
+    <Name>Sidechain lookahead 3</Name>
+    <Symbol>sla_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>121</Index>
+    <Name>Sidechain reactivity 3</Name>
+    <Symbol>scr_3</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>122</Index>
+    <Name>Sidechain preamp 3</Name>
+    <Symbol>scp_3</Symbol>
+    <Value>3.98107171058655</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>123</Index>
+    <Name>Sidechain custom lo-cut 3</Name>
+    <Symbol>sclc_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>124</Index>
+    <Name>Sidechain custom hi-cut 3</Name>
+    <Symbol>schc_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>125</Index>
+    <Name>Sidechain lo-cut frequency 3</Name>
+    <Symbol>sclf_3</Symbol>
+    <Value>2000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>126</Index>
+    <Name>Sidechain hi-cut frequency 3</Name>
+    <Symbol>schf_3</Symbol>
+    <Value>4000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>127</Index>
+    <Name>Compression mode 3</Name>
+    <Symbol>cm_3</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>128</Index>
+    <Name>Compressor enable 3</Name>
+    <Symbol>ce_3</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>129</Index>
+    <Name>Solo band 3</Name>
+    <Symbol>bs_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>130</Index>
+    <Name>Mute band 3</Name>
+    <Symbol>bm_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>131</Index>
+    <Name>Attack threshold 3</Name>
+    <Symbol>al_3</Symbol>
+    <Value>0.251188635826111</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>132</Index>
+    <Name>Attack time 3</Name>
+    <Symbol>at_3</Symbol>
+    <Value>24</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>133</Index>
+    <Name>Release threshold 3</Name>
+    <Symbol>rrl_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>134</Index>
+    <Name>Release time 3</Name>
+    <Symbol>rt_3</Symbol>
+    <Value>96</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>135</Index>
+    <Name>Ratio 3</Name>
+    <Symbol>cr_3</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>136</Index>
+    <Name>Knee 3</Name>
+    <Symbol>kn_3</Symbol>
+    <Value>0.0631000027060509</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>137</Index>
+    <Name>Boost threshold 3</Name>
+    <Symbol>bth_3</Symbol>
+    <Value>0.000251188554102555</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>138</Index>
+    <Name>Boost signal amount 3</Name>
+    <Symbol>bsa_3</Symbol>
+    <Value>3.98107171058655</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>139</Index>
+    <Name>Makeup gain 3</Name>
+    <Symbol>mk_3</Symbol>
+    <Value>0.501187264919281</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>140</Index>
+    <Name>Hue  3</Name>
+    <Symbol>hue_3</Symbol>
+    <Value>0.375</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>143</Index>
+    <Name>External sidechain enable 4</Name>
+    <Symbol>sce_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>144</Index>
+    <Name>Sidechain source 4</Name>
+    <Symbol>scs_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>145</Index>
+    <Name>Split sidechain source 4</Name>
+    <Symbol>sscs_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>146</Index>
+    <Name>Sidechain mode 4</Name>
+    <Symbol>scm_4</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>147</Index>
+    <Name>Sidechain lookahead 4</Name>
+    <Symbol>sla_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>148</Index>
+    <Name>Sidechain reactivity 4</Name>
+    <Symbol>scr_4</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>149</Index>
+    <Name>Sidechain preamp 4</Name>
+    <Symbol>scp_4</Symbol>
+    <Value>3.98107171058655</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>150</Index>
+    <Name>Sidechain custom lo-cut 4</Name>
+    <Symbol>sclc_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>151</Index>
+    <Name>Sidechain custom hi-cut 4</Name>
+    <Symbol>schc_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>152</Index>
+    <Name>Sidechain lo-cut frequency 4</Name>
+    <Symbol>sclf_4</Symbol>
+    <Value>4000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>153</Index>
+    <Name>Sidechain hi-cut frequency 4</Name>
+    <Symbol>schf_4</Symbol>
+    <Value>8000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>154</Index>
+    <Name>Compression mode 4</Name>
+    <Symbol>cm_4</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>155</Index>
+    <Name>Compressor enable 4</Name>
+    <Symbol>ce_4</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>156</Index>
+    <Name>Solo band 4</Name>
+    <Symbol>bs_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>157</Index>
+    <Name>Mute band 4</Name>
+    <Symbol>bm_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>158</Index>
+    <Name>Attack threshold 4</Name>
+    <Symbol>al_4</Symbol>
+    <Value>0.251188635826111</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>159</Index>
+    <Name>Attack time 4</Name>
+    <Symbol>at_4</Symbol>
+    <Value>24</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>160</Index>
+    <Name>Release threshold 4</Name>
+    <Symbol>rrl_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>161</Index>
+    <Name>Release time 4</Name>
+    <Symbol>rt_4</Symbol>
+    <Value>96</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>162</Index>
+    <Name>Ratio 4</Name>
+    <Symbol>cr_4</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>163</Index>
+    <Name>Knee 4</Name>
+    <Symbol>kn_4</Symbol>
+    <Value>0.0631000027060509</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>164</Index>
+    <Name>Boost threshold 4</Name>
+    <Symbol>bth_4</Symbol>
+    <Value>0.000251188554102555</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>165</Index>
+    <Name>Boost signal amount 4</Name>
+    <Symbol>bsa_4</Symbol>
+    <Value>3.98107171058655</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>166</Index>
+    <Name>Makeup gain 4</Name>
+    <Symbol>mk_4</Symbol>
+    <Value>0.501187264919281</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>167</Index>
+    <Name>Hue  4</Name>
+    <Symbol>hue_4</Symbol>
+    <Value>0.5</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>170</Index>
+    <Name>External sidechain enable 5</Name>
+    <Symbol>sce_5</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>171</Index>
+    <Name>Sidechain source 5</Name>
+    <Symbol>scs_5</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>172</Index>
+    <Name>Split sidechain source 5</Name>
+    <Symbol>sscs_5</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>173</Index>
+    <Name>Sidechain mode 5</Name>
+    <Symbol>scm_5</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>174</Index>
+    <Name>Sidechain lookahead 5</Name>
+    <Symbol>sla_5</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>175</Index>
+    <Name>Sidechain reactivity 5</Name>
+    <Symbol>scr_5</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>176</Index>
+    <Name>Sidechain preamp 5</Name>
+    <Symbol>scp_5</Symbol>
+    <Value>3.98107171058655</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>177</Index>
+    <Name>Sidechain custom lo-cut 5</Name>
+    <Symbol>sclc_5</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>178</Index>
+    <Name>Sidechain custom hi-cut 5</Name>
+    <Symbol>schc_5</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>179</Index>
+    <Name>Sidechain lo-cut frequency 5</Name>
+    <Symbol>sclf_5</Symbol>
+    <Value>8000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>180</Index>
+    <Name>Sidechain hi-cut frequency 5</Name>
+    <Symbol>schf_5</Symbol>
+    <Value>12000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>181</Index>
+    <Name>Compression mode 5</Name>
+    <Symbol>cm_5</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>182</Index>
+    <Name>Compressor enable 5</Name>
+    <Symbol>ce_5</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>183</Index>
+    <Name>Solo band 5</Name>
+    <Symbol>bs_5</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>184</Index>
+    <Name>Mute band 5</Name>
+    <Symbol>bm_5</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>185</Index>
+    <Name>Attack threshold 5</Name>
+    <Symbol>al_5</Symbol>
+    <Value>0.251188635826111</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>186</Index>
+    <Name>Attack time 5</Name>
+    <Symbol>at_5</Symbol>
+    <Value>24</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>187</Index>
+    <Name>Release threshold 5</Name>
+    <Symbol>rrl_5</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>188</Index>
+    <Name>Release time 5</Name>
+    <Symbol>rt_5</Symbol>
+    <Value>96</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>189</Index>
+    <Name>Ratio 5</Name>
+    <Symbol>cr_5</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>190</Index>
+    <Name>Knee 5</Name>
+    <Symbol>kn_5</Symbol>
+    <Value>0.0631000027060509</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>191</Index>
+    <Name>Boost threshold 5</Name>
+    <Symbol>bth_5</Symbol>
+    <Value>0.000251188554102555</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>192</Index>
+    <Name>Boost signal amount 5</Name>
+    <Symbol>bsa_5</Symbol>
+    <Value>3.98107171058655</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>193</Index>
+    <Name>Makeup gain 5</Name>
+    <Symbol>mk_5</Symbol>
+    <Value>0.501187264919281</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>194</Index>
+    <Name>Hue  5</Name>
+    <Symbol>hue_5</Symbol>
+    <Value>0.625</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>197</Index>
+    <Name>External sidechain enable 6</Name>
+    <Symbol>sce_6</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>198</Index>
+    <Name>Sidechain source 6</Name>
+    <Symbol>scs_6</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>199</Index>
+    <Name>Split sidechain source 6</Name>
+    <Symbol>sscs_6</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>200</Index>
+    <Name>Sidechain mode 6</Name>
+    <Symbol>scm_6</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>201</Index>
+    <Name>Sidechain lookahead 6</Name>
+    <Symbol>sla_6</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>202</Index>
+    <Name>Sidechain reactivity 6</Name>
+    <Symbol>scr_6</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>203</Index>
+    <Name>Sidechain preamp 6</Name>
+    <Symbol>scp_6</Symbol>
+    <Value>3.98107171058655</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>204</Index>
+    <Name>Sidechain custom lo-cut 6</Name>
+    <Symbol>sclc_6</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>205</Index>
+    <Name>Sidechain custom hi-cut 6</Name>
+    <Symbol>schc_6</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>206</Index>
+    <Name>Sidechain lo-cut frequency 6</Name>
+    <Symbol>sclf_6</Symbol>
+    <Value>12000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>207</Index>
+    <Name>Sidechain hi-cut frequency 6</Name>
+    <Symbol>schf_6</Symbol>
+    <Value>16000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>208</Index>
+    <Name>Compression mode 6</Name>
+    <Symbol>cm_6</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>209</Index>
+    <Name>Compressor enable 6</Name>
+    <Symbol>ce_6</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>210</Index>
+    <Name>Solo band 6</Name>
+    <Symbol>bs_6</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>211</Index>
+    <Name>Mute band 6</Name>
+    <Symbol>bm_6</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>212</Index>
+    <Name>Attack threshold 6</Name>
+    <Symbol>al_6</Symbol>
+    <Value>0.251188635826111</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>213</Index>
+    <Name>Attack time 6</Name>
+    <Symbol>at_6</Symbol>
+    <Value>24</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>214</Index>
+    <Name>Release threshold 6</Name>
+    <Symbol>rrl_6</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>215</Index>
+    <Name>Release time 6</Name>
+    <Symbol>rt_6</Symbol>
+    <Value>96</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>216</Index>
+    <Name>Ratio 6</Name>
+    <Symbol>cr_6</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>217</Index>
+    <Name>Knee 6</Name>
+    <Symbol>kn_6</Symbol>
+    <Value>0.0631000027060509</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>218</Index>
+    <Name>Boost threshold 6</Name>
+    <Symbol>bth_6</Symbol>
+    <Value>0.000251188554102555</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>219</Index>
+    <Name>Boost signal amount 6</Name>
+    <Symbol>bsa_6</Symbol>
+    <Value>3.98107171058655</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>220</Index>
+    <Name>Makeup gain 6</Name>
+    <Symbol>mk_6</Symbol>
+    <Value>0.501187264919281</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>221</Index>
+    <Name>Hue  6</Name>
+    <Symbol>hue_6</Symbol>
+    <Value>0.75</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>224</Index>
+    <Name>External sidechain enable 7</Name>
+    <Symbol>sce_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>225</Index>
+    <Name>Sidechain source 7</Name>
+    <Symbol>scs_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>226</Index>
+    <Name>Split sidechain source 7</Name>
+    <Symbol>sscs_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>227</Index>
+    <Name>Sidechain mode 7</Name>
+    <Symbol>scm_7</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>228</Index>
+    <Name>Sidechain lookahead 7</Name>
+    <Symbol>sla_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>229</Index>
+    <Name>Sidechain reactivity 7</Name>
+    <Symbol>scr_7</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>230</Index>
+    <Name>Sidechain preamp 7</Name>
+    <Symbol>scp_7</Symbol>
+    <Value>3.98107171058655</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>231</Index>
+    <Name>Sidechain custom lo-cut 7</Name>
+    <Symbol>sclc_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>232</Index>
+    <Name>Sidechain custom hi-cut 7</Name>
+    <Symbol>schc_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>233</Index>
+    <Name>Sidechain lo-cut frequency 7</Name>
+    <Symbol>sclf_7</Symbol>
+    <Value>16000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>234</Index>
+    <Name>Sidechain hi-cut frequency 7</Name>
+    <Symbol>schf_7</Symbol>
+    <Value>20000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>235</Index>
+    <Name>Compression mode 7</Name>
+    <Symbol>cm_7</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>236</Index>
+    <Name>Compressor enable 7</Name>
+    <Symbol>ce_7</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>237</Index>
+    <Name>Solo band 7</Name>
+    <Symbol>bs_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>238</Index>
+    <Name>Mute band 7</Name>
+    <Symbol>bm_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>239</Index>
+    <Name>Attack threshold 7</Name>
+    <Symbol>al_7</Symbol>
+    <Value>0.251188635826111</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>240</Index>
+    <Name>Attack time 7</Name>
+    <Symbol>at_7</Symbol>
+    <Value>24</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>241</Index>
+    <Name>Release threshold 7</Name>
+    <Symbol>rrl_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>242</Index>
+    <Name>Release time 7</Name>
+    <Symbol>rt_7</Symbol>
+    <Value>96</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>243</Index>
+    <Name>Ratio 7</Name>
+    <Symbol>cr_7</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>244</Index>
+    <Name>Knee 7</Name>
+    <Symbol>kn_7</Symbol>
+    <Value>0.0631000027060509</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>245</Index>
+    <Name>Boost threshold 7</Name>
+    <Symbol>bth_7</Symbol>
+    <Value>0.000251188554102555</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>246</Index>
+    <Name>Boost signal amount 7</Name>
+    <Symbol>bsa_7</Symbol>
+    <Value>3.98107171058655</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>247</Index>
+    <Name>Makeup gain 7</Name>
+    <Symbol>mk_7</Symbol>
+    <Value>0.501187264919281</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>248</Index>
+    <Name>Hue  7</Name>
+    <Symbol>hue_7</Symbol>
+    <Value>0.875</Value>
+   </Parameter>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/property</Type>
+    <Key>CarlaSkin</Key>
+    <Value>default</Value>
+   </CustomData>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/property</Type>
+    <Key>CarlaSkinIsCompacted</Key>
+    <Value>false</Value>
+   </CustomData>
+  </Data>
+ </Plugin>
+
+ <!-- Calf Reverb -->
+ <Plugin>
+  <Info>
+   <Type>LV2</Type>
+   <Name>Calf Reverb</Name>
+   <URI>http://calf.sourceforge.net/plugins/Reverb</URI>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x3f1</Options>
+
+   <Parameter>
+    <Index>3</Index>
+    <Name>Decay time</Name>
+    <Symbol>decay_time</Symbol>
+    <Value>1.20000004768372</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>4</Index>
+    <Name>High Frq Damp</Name>
+    <Symbol>hf_damp</Symbol>
+    <Value>3000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>5</Index>
+    <Name>Room size</Name>
+    <Symbol>room_size</Symbol>
+    <Value>5</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>6</Index>
+    <Name>Diffusion</Name>
+    <Symbol>diffusion</Symbol>
+    <Value>0.300000011920929</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>7</Index>
+    <Name>Wet Amount</Name>
+    <Symbol>amount</Symbol>
+    <Value>0.150000005960464</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>8</Index>
+    <Name>Dry Amount</Name>
+    <Symbol>dry</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>9</Index>
+    <Name>Pre Delay</Name>
+    <Symbol>predelay</Symbol>
+    <Value>30</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>10</Index>
+    <Name>Bass Cut</Name>
+    <Symbol>bass_cut</Symbol>
+    <Value>300</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>11</Index>
+    <Name>Treble Cut</Name>
+    <Symbol>treble_cut</Symbol>
+    <Value>3000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>12</Index>
+    <Name>Active</Name>
+    <Symbol>on</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>13</Index>
+    <Name>Input Gain</Name>
+    <Symbol>level_in</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>14</Index>
+    <Name>Output Gain</Name>
+    <Symbol>level_out</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/property</Type>
+    <Key>CarlaSkin</Key>
+    <Value>default</Value>
+   </CustomData>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/property</Type>
+    <Key>CarlaSkinIsCompacted</Key>
+    <Value>false</Value>
+   </CustomData>
+  </Data>
+ </Plugin>
+
+ <!-- LSP Parametric Equalizer x32 MidSide -->
+ <Plugin>
+  <Info>
+   <Type>LV2</Type>
+   <Name>LSP Parametric Equalizer x32 MidSide</Name>
+   <URI>http://lsp-plug.in/plugins/lv2/para_equalizer_x32_ms</URI>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x1</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Enabled</Name>
+    <Symbol>enabled</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Input gain</Name>
+    <Symbol>g_in</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>Output gain</Name>
+    <Symbol>g_out</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>3</Index>
+    <Name>Equalizer mode</Name>
+    <Symbol>mode</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>4</Index>
+    <Name>FFT reactivity</Name>
+    <Symbol>react</Symbol>
+    <Value>0.200000002980232</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>5</Index>
+    <Name>Shift gain</Name>
+    <Symbol>shift</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>6</Index>
+    <Name>Graph zoom</Name>
+    <Symbol>zoom</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>7</Index>
+    <Name>Filter select</Name>
+    <Symbol>fsel</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>8</Index>
+    <Name>Inspected filter identifier</Name>
+    <Symbol>insp_id</Symbol>
+    <Value>-1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>9</Index>
+    <Name>Inspect frequency range</Name>
+    <Symbol>insp_r</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>10</Index>
+    <Name>Automatically inspect filter when editing</Name>
+    <Symbol>insp_on</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>11</Index>
+    <Name>Input FFT graph enable Mid</Name>
+    <Symbol>ife_m</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>12</Index>
+    <Name>Output FFT graph enable Mid</Name>
+    <Symbol>ofe_m</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>13</Index>
+    <Name>Input FFT graph enable Side</Name>
+    <Symbol>ife_s</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>14</Index>
+    <Name>Output FFT graph enable Side</Name>
+    <Symbol>ofe_s</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>15</Index>
+    <Name>Output balance</Name>
+    <Symbol>bal</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>16</Index>
+    <Name>Mid/Side listen</Name>
+    <Symbol>lstn</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>17</Index>
+    <Name>Mid gain</Name>
+    <Symbol>gain_m</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>18</Index>
+    <Name>Side gain</Name>
+    <Symbol>gain_s</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>19</Index>
+    <Name>Frequency shift Mid</Name>
+    <Symbol>frqs_m</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>22</Index>
+    <Name>Filter visibility Mid</Name>
+    <Symbol>fltv_m</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>23</Index>
+    <Name>Frequency shift Side</Name>
+    <Symbol>frqs_s</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>26</Index>
+    <Name>Filter visibility Side</Name>
+    <Symbol>fltv_s</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>27</Index>
+    <Name>Filter type Mid 0</Name>
+    <Symbol>ftm_0</Symbol>
+    <Value>7</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>28</Index>
+    <Name>Filter mode Mid 0</Name>
+    <Symbol>fmm_0</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>29</Index>
+    <Name>Filter slope Mid 0</Name>
+    <Symbol>sm_0</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>30</Index>
+    <Name>Filter solo Mid 0</Name>
+    <Symbol>xsm_0</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>31</Index>
+    <Name>Filter mute Mid 0</Name>
+    <Symbol>xmm_0</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>32</Index>
+    <Name>Frequency Mid 0</Name>
+    <Symbol>fm_0</Symbol>
+    <Value>20</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>33</Index>
+    <Name>Filter Width Mid 0</Name>
+    <Symbol>wm_0</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>34</Index>
+    <Name>Gain Mid 0</Name>
+    <Symbol>gm_0</Symbol>
+    <Value>1.58489322662354</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>35</Index>
+    <Name>Quality factor Mid 0</Name>
+    <Symbol>qm_0</Symbol>
+    <Value>0.300000011920929</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>36</Index>
+    <Name>Hue Mid 0</Name>
+    <Symbol>huem_0</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>38</Index>
+    <Name>Filter type Side 0</Name>
+    <Symbol>fts_0</Symbol>
+    <Value>6</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>39</Index>
+    <Name>Filter mode Side 0</Name>
+    <Symbol>fms_0</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>40</Index>
+    <Name>Filter slope Side 0</Name>
+    <Symbol>ss_0</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>41</Index>
+    <Name>Filter solo Side 0</Name>
+    <Symbol>xss_0</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>42</Index>
+    <Name>Filter mute Side 0</Name>
+    <Symbol>xms_0</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>43</Index>
+    <Name>Frequency Side 0</Name>
+    <Symbol>fs_0</Symbol>
+    <Value>10</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>44</Index>
+    <Name>Filter Width Side 0</Name>
+    <Symbol>ws_0</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>45</Index>
+    <Name>Gain Side 0</Name>
+    <Symbol>gs_0</Symbol>
+    <Value>0.841395139694214</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>46</Index>
+    <Name>Quality factor Side 0</Name>
+    <Symbol>qs_0</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>47</Index>
+    <Name>Hue Side 0</Name>
+    <Symbol>hues_0</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>49</Index>
+    <Name>Filter type Mid 1</Name>
+    <Symbol>ftm_1</Symbol>
+    <Value>7</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>50</Index>
+    <Name>Filter mode Mid 1</Name>
+    <Symbol>fmm_1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>51</Index>
+    <Name>Filter slope Mid 1</Name>
+    <Symbol>sm_1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>52</Index>
+    <Name>Filter solo Mid 1</Name>
+    <Symbol>xsm_1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>53</Index>
+    <Name>Filter mute Mid 1</Name>
+    <Symbol>xmm_1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>54</Index>
+    <Name>Frequency Mid 1</Name>
+    <Symbol>fm_1</Symbol>
+    <Value>60</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>55</Index>
+    <Name>Filter Width Mid 1</Name>
+    <Symbol>wm_1</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>56</Index>
+    <Name>Gain Mid 1</Name>
+    <Symbol>gm_1</Symbol>
+    <Value>1.25892543792725</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>57</Index>
+    <Name>Quality factor Mid 1</Name>
+    <Symbol>qm_1</Symbol>
+    <Value>0.300000011920929</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>58</Index>
+    <Name>Hue Mid 1</Name>
+    <Symbol>huem_1</Symbol>
+    <Value>0.03125</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>60</Index>
+    <Name>Filter type Side 1</Name>
+    <Symbol>fts_1</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>61</Index>
+    <Name>Filter mode Side 1</Name>
+    <Symbol>fms_1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>62</Index>
+    <Name>Filter slope Side 1</Name>
+    <Symbol>ss_1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>63</Index>
+    <Name>Filter solo Side 1</Name>
+    <Symbol>xss_1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>64</Index>
+    <Name>Filter mute Side 1</Name>
+    <Symbol>xms_1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>65</Index>
+    <Name>Frequency Side 1</Name>
+    <Symbol>fs_1</Symbol>
+    <Value>30</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>66</Index>
+    <Name>Filter Width Side 1</Name>
+    <Symbol>ws_1</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>67</Index>
+    <Name>Gain Side 1</Name>
+    <Symbol>gs_1</Symbol>
+    <Value>0.944060862064362</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>68</Index>
+    <Name>Quality factor Side 1</Name>
+    <Symbol>qs_1</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>69</Index>
+    <Name>Hue Side 1</Name>
+    <Symbol>hues_1</Symbol>
+    <Value>0.03125</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>71</Index>
+    <Name>Filter type Mid 2</Name>
+    <Symbol>ftm_2</Symbol>
+    <Value>7</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>72</Index>
+    <Name>Filter mode Mid 2</Name>
+    <Symbol>fmm_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>73</Index>
+    <Name>Filter slope Mid 2</Name>
+    <Symbol>sm_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>74</Index>
+    <Name>Filter solo Mid 2</Name>
+    <Symbol>xsm_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>75</Index>
+    <Name>Filter mute Mid 2</Name>
+    <Symbol>xmm_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>76</Index>
+    <Name>Frequency Mid 2</Name>
+    <Symbol>fm_2</Symbol>
+    <Value>180</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>77</Index>
+    <Name>Filter Width Mid 2</Name>
+    <Symbol>wm_2</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>78</Index>
+    <Name>Gain Mid 2</Name>
+    <Symbol>gm_2</Symbol>
+    <Value>1.12201845645905</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>79</Index>
+    <Name>Quality factor Mid 2</Name>
+    <Symbol>qm_2</Symbol>
+    <Value>0.300000011920929</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>80</Index>
+    <Name>Hue Mid 2</Name>
+    <Symbol>huem_2</Symbol>
+    <Value>0.0625</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>82</Index>
+    <Name>Filter type Side 2</Name>
+    <Symbol>fts_2</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>83</Index>
+    <Name>Filter mode Side 2</Name>
+    <Symbol>fms_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>84</Index>
+    <Name>Filter slope Side 2</Name>
+    <Symbol>ss_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>85</Index>
+    <Name>Filter solo Side 2</Name>
+    <Symbol>xss_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>86</Index>
+    <Name>Filter mute Side 2</Name>
+    <Symbol>xms_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>87</Index>
+    <Name>Frequency Side 2</Name>
+    <Symbol>fs_2</Symbol>
+    <Value>90</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>88</Index>
+    <Name>Filter Width Side 2</Name>
+    <Symbol>ws_2</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>89</Index>
+    <Name>Gain Side 2</Name>
+    <Symbol>gs_2</Symbol>
+    <Value>1.05925369262695</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>90</Index>
+    <Name>Quality factor Side 2</Name>
+    <Symbol>qs_2</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>91</Index>
+    <Name>Hue Side 2</Name>
+    <Symbol>hues_2</Symbol>
+    <Value>0.0625</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>93</Index>
+    <Name>Filter type Mid 3</Name>
+    <Symbol>ftm_3</Symbol>
+    <Value>7</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>94</Index>
+    <Name>Filter mode Mid 3</Name>
+    <Symbol>fmm_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>95</Index>
+    <Name>Filter slope Mid 3</Name>
+    <Symbol>sm_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>96</Index>
+    <Name>Filter solo Mid 3</Name>
+    <Symbol>xsm_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>97</Index>
+    <Name>Filter mute Mid 3</Name>
+    <Symbol>xmm_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>98</Index>
+    <Name>Frequency Mid 3</Name>
+    <Symbol>fm_3</Symbol>
+    <Value>540</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>99</Index>
+    <Name>Filter Width Mid 3</Name>
+    <Symbol>wm_3</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>100</Index>
+    <Name>Gain Mid 3</Name>
+    <Symbol>gm_3</Symbol>
+    <Value>0.891250908374786</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>101</Index>
+    <Name>Quality factor Mid 3</Name>
+    <Symbol>qm_3</Symbol>
+    <Value>0.300000011920929</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>102</Index>
+    <Name>Hue Mid 3</Name>
+    <Symbol>huem_3</Symbol>
+    <Value>0.09375</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>104</Index>
+    <Name>Filter type Side 3</Name>
+    <Symbol>fts_3</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>105</Index>
+    <Name>Filter mode Side 3</Name>
+    <Symbol>fms_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>106</Index>
+    <Name>Filter slope Side 3</Name>
+    <Symbol>ss_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>107</Index>
+    <Name>Filter solo Side 3</Name>
+    <Symbol>xss_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>108</Index>
+    <Name>Filter mute Side 3</Name>
+    <Symbol>xms_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>109</Index>
+    <Name>Frequency Side 3</Name>
+    <Symbol>fs_3</Symbol>
+    <Value>270</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>110</Index>
+    <Name>Filter Width Side 3</Name>
+    <Symbol>ws_3</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>111</Index>
+    <Name>Gain Side 3</Name>
+    <Symbol>gs_3</Symbol>
+    <Value>1.18850219249725</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>112</Index>
+    <Name>Quality factor Side 3</Name>
+    <Symbol>qs_3</Symbol>
+    <Value>3</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>113</Index>
+    <Name>Hue Side 3</Name>
+    <Symbol>hues_3</Symbol>
+    <Value>0.09375</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>115</Index>
+    <Name>Filter type Mid 4</Name>
+    <Symbol>ftm_4</Symbol>
+    <Value>7</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>116</Index>
+    <Name>Filter mode Mid 4</Name>
+    <Symbol>fmm_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>117</Index>
+    <Name>Filter slope Mid 4</Name>
+    <Symbol>sm_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>118</Index>
+    <Name>Filter solo Mid 4</Name>
+    <Symbol>xsm_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>119</Index>
+    <Name>Filter mute Mid 4</Name>
+    <Symbol>xmm_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>120</Index>
+    <Name>Frequency Mid 4</Name>
+    <Symbol>fm_4</Symbol>
+    <Value>1620</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>121</Index>
+    <Name>Filter Width Mid 4</Name>
+    <Symbol>wm_4</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>122</Index>
+    <Name>Gain Mid 4</Name>
+    <Symbol>gm_4</Symbol>
+    <Value>0.794328212738037</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>123</Index>
+    <Name>Quality factor Mid 4</Name>
+    <Symbol>qm_4</Symbol>
+    <Value>0.300000011920929</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>124</Index>
+    <Name>Hue Mid 4</Name>
+    <Symbol>huem_4</Symbol>
+    <Value>0.125</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>126</Index>
+    <Name>Filter type Side 4</Name>
+    <Symbol>fts_4</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>127</Index>
+    <Name>Filter mode Side 4</Name>
+    <Symbol>fms_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>128</Index>
+    <Name>Filter slope Side 4</Name>
+    <Symbol>ss_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>129</Index>
+    <Name>Filter solo Side 4</Name>
+    <Symbol>xss_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>130</Index>
+    <Name>Filter mute Side 4</Name>
+    <Symbol>xms_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>131</Index>
+    <Name>Frequency Side 4</Name>
+    <Symbol>fs_4</Symbol>
+    <Value>810</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>132</Index>
+    <Name>Filter Width Side 4</Name>
+    <Symbol>ws_4</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>133</Index>
+    <Name>Gain Side 4</Name>
+    <Symbol>gs_4</Symbol>
+    <Value>1.33352148532867</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>134</Index>
+    <Name>Quality factor Side 4</Name>
+    <Symbol>qs_4</Symbol>
+    <Value>3</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>135</Index>
+    <Name>Hue Side 4</Name>
+    <Symbol>hues_4</Symbol>
+    <Value>0.125</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>137</Index>
+    <Name>Filter type Mid 5</Name>
+    <Symbol>ftm_5</Symbol>
+    <Value>7</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>138</Index>
+    <Name>Filter mode Mid 5</Name>
+    <Symbol>fmm_5</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>139</Index>
+    <Name>Filter slope Mid 5</Name>
+    <Symbol>sm_5</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>140</Index>
+    <Name>Filter solo Mid 5</Name>
+    <Symbol>xsm_5</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>141</Index>
+    <Name>Filter mute Mid 5</Name>
+    <Symbol>xmm_5</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>142</Index>
+    <Name>Frequency Mid 5</Name>
+    <Symbol>fm_5</Symbol>
+    <Value>4860</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>143</Index>
+    <Name>Filter Width Mid 5</Name>
+    <Symbol>wm_5</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>144</Index>
+    <Name>Gain Mid 5</Name>
+    <Symbol>gm_5</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>145</Index>
+    <Name>Quality factor Mid 5</Name>
+    <Symbol>qm_5</Symbol>
+    <Value>0.300000011920929</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>146</Index>
+    <Name>Hue Mid 5</Name>
+    <Symbol>huem_5</Symbol>
+    <Value>0.15625</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>148</Index>
+    <Name>Filter type Side 5</Name>
+    <Symbol>fts_5</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>149</Index>
+    <Name>Filter mode Side 5</Name>
+    <Symbol>fms_5</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>150</Index>
+    <Name>Filter slope Side 5</Name>
+    <Symbol>ss_5</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>151</Index>
+    <Name>Filter solo Side 5</Name>
+    <Symbol>xss_5</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>152</Index>
+    <Name>Filter mute Side 5</Name>
+    <Symbol>xms_5</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>153</Index>
+    <Name>Frequency Side 5</Name>
+    <Symbol>fs_5</Symbol>
+    <Value>2430</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>154</Index>
+    <Name>Filter Width Side 5</Name>
+    <Symbol>ws_5</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>155</Index>
+    <Name>Gain Side 5</Name>
+    <Symbol>gs_5</Symbol>
+    <Value>1.18850219249725</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>156</Index>
+    <Name>Quality factor Side 5</Name>
+    <Symbol>qs_5</Symbol>
+    <Value>3</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>157</Index>
+    <Name>Hue Side 5</Name>
+    <Symbol>hues_5</Symbol>
+    <Value>0.15625</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>159</Index>
+    <Name>Filter type Mid 6</Name>
+    <Symbol>ftm_6</Symbol>
+    <Value>7</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>160</Index>
+    <Name>Filter mode Mid 6</Name>
+    <Symbol>fmm_6</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>161</Index>
+    <Name>Filter slope Mid 6</Name>
+    <Symbol>sm_6</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>162</Index>
+    <Name>Filter solo Mid 6</Name>
+    <Symbol>xsm_6</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>163</Index>
+    <Name>Filter mute Mid 6</Name>
+    <Symbol>xmm_6</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>164</Index>
+    <Name>Frequency Mid 6</Name>
+    <Symbol>fm_6</Symbol>
+    <Value>14580</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>165</Index>
+    <Name>Filter Width Mid 6</Name>
+    <Symbol>wm_6</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>166</Index>
+    <Name>Gain Mid 6</Name>
+    <Symbol>gm_6</Symbol>
+    <Value>1.41253757476807</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>167</Index>
+    <Name>Quality factor Mid 6</Name>
+    <Symbol>qm_6</Symbol>
+    <Value>0.300000011920929</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>168</Index>
+    <Name>Hue Mid 6</Name>
+    <Symbol>huem_6</Symbol>
+    <Value>0.1875</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>170</Index>
+    <Name>Filter type Side 6</Name>
+    <Symbol>fts_6</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>171</Index>
+    <Name>Filter mode Side 6</Name>
+    <Symbol>fms_6</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>172</Index>
+    <Name>Filter slope Side 6</Name>
+    <Symbol>ss_6</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>173</Index>
+    <Name>Filter solo Side 6</Name>
+    <Symbol>xss_6</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>174</Index>
+    <Name>Filter mute Side 6</Name>
+    <Symbol>xms_6</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>175</Index>
+    <Name>Frequency Side 6</Name>
+    <Symbol>fs_6</Symbol>
+    <Value>7290</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>176</Index>
+    <Name>Filter Width Side 6</Name>
+    <Symbol>ws_6</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>177</Index>
+    <Name>Gain Side 6</Name>
+    <Symbol>gs_6</Symbol>
+    <Value>1.05925369262695</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>178</Index>
+    <Name>Quality factor Side 6</Name>
+    <Symbol>qs_6</Symbol>
+    <Value>3</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>179</Index>
+    <Name>Hue Side 6</Name>
+    <Symbol>hues_6</Symbol>
+    <Value>0.1875</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>181</Index>
+    <Name>Filter type Mid 7</Name>
+    <Symbol>ftm_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>182</Index>
+    <Name>Filter mode Mid 7</Name>
+    <Symbol>fmm_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>183</Index>
+    <Name>Filter slope Mid 7</Name>
+    <Symbol>sm_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>184</Index>
+    <Name>Filter solo Mid 7</Name>
+    <Symbol>xsm_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>185</Index>
+    <Name>Filter mute Mid 7</Name>
+    <Symbol>xmm_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>186</Index>
+    <Name>Frequency Mid 7</Name>
+    <Symbol>fm_7</Symbol>
+    <Value>14580</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>187</Index>
+    <Name>Filter Width Mid 7</Name>
+    <Symbol>wm_7</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>188</Index>
+    <Name>Gain Mid 7</Name>
+    <Symbol>gm_7</Symbol>
+    <Value>1.41253757476807</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>189</Index>
+    <Name>Quality factor Mid 7</Name>
+    <Symbol>qm_7</Symbol>
+    <Value>6</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>190</Index>
+    <Name>Hue Mid 7</Name>
+    <Symbol>huem_7</Symbol>
+    <Value>0.21875</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>192</Index>
+    <Name>Filter type Side 7</Name>
+    <Symbol>fts_7</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>193</Index>
+    <Name>Filter mode Side 7</Name>
+    <Symbol>fms_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>194</Index>
+    <Name>Filter slope Side 7</Name>
+    <Symbol>ss_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>195</Index>
+    <Name>Filter solo Side 7</Name>
+    <Symbol>xss_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>196</Index>
+    <Name>Filter mute Side 7</Name>
+    <Symbol>xms_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>197</Index>
+    <Name>Frequency Side 7</Name>
+    <Symbol>fs_7</Symbol>
+    <Value>20000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>198</Index>
+    <Name>Filter Width Side 7</Name>
+    <Symbol>ws_7</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>199</Index>
+    <Name>Gain Side 7</Name>
+    <Symbol>gs_7</Symbol>
+    <Value>0.944060862064362</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>200</Index>
+    <Name>Quality factor Side 7</Name>
+    <Symbol>qs_7</Symbol>
+    <Value>0.5</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>201</Index>
+    <Name>Hue Side 7</Name>
+    <Symbol>hues_7</Symbol>
+    <Value>0.21875</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>203</Index>
+    <Name>Filter type Mid 8</Name>
+    <Symbol>ftm_8</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>204</Index>
+    <Name>Filter mode Mid 8</Name>
+    <Symbol>fmm_8</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>205</Index>
+    <Name>Filter slope Mid 8</Name>
+    <Symbol>sm_8</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>206</Index>
+    <Name>Filter solo Mid 8</Name>
+    <Symbol>xsm_8</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>207</Index>
+    <Name>Filter mute Mid 8</Name>
+    <Symbol>xmm_8</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>208</Index>
+    <Name>Frequency Mid 8</Name>
+    <Symbol>fm_8</Symbol>
+    <Value>100</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>209</Index>
+    <Name>Filter Width Mid 8</Name>
+    <Symbol>wm_8</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>210</Index>
+    <Name>Gain Mid 8</Name>
+    <Symbol>gm_8</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>211</Index>
+    <Name>Quality factor Mid 8</Name>
+    <Symbol>qm_8</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>212</Index>
+    <Name>Hue Mid 8</Name>
+    <Symbol>huem_8</Symbol>
+    <Value>0.25</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>214</Index>
+    <Name>Filter type Side 8</Name>
+    <Symbol>fts_8</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>215</Index>
+    <Name>Filter mode Side 8</Name>
+    <Symbol>fms_8</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>216</Index>
+    <Name>Filter slope Side 8</Name>
+    <Symbol>ss_8</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>217</Index>
+    <Name>Filter solo Side 8</Name>
+    <Symbol>xss_8</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>218</Index>
+    <Name>Filter mute Side 8</Name>
+    <Symbol>xms_8</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>219</Index>
+    <Name>Frequency Side 8</Name>
+    <Symbol>fs_8</Symbol>
+    <Value>23999.9921875</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>220</Index>
+    <Name>Filter Width Side 8</Name>
+    <Symbol>ws_8</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>221</Index>
+    <Name>Gain Side 8</Name>
+    <Symbol>gs_8</Symbol>
+    <Value>1.41253757476807</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>222</Index>
+    <Name>Quality factor Side 8</Name>
+    <Symbol>qs_8</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>223</Index>
+    <Name>Hue Side 8</Name>
+    <Symbol>hues_8</Symbol>
+    <Value>0.25</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>225</Index>
+    <Name>Filter type Mid 9</Name>
+    <Symbol>ftm_9</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>226</Index>
+    <Name>Filter mode Mid 9</Name>
+    <Symbol>fmm_9</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>227</Index>
+    <Name>Filter slope Mid 9</Name>
+    <Symbol>sm_9</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>228</Index>
+    <Name>Filter solo Mid 9</Name>
+    <Symbol>xsm_9</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>229</Index>
+    <Name>Filter mute Mid 9</Name>
+    <Symbol>xmm_9</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>230</Index>
+    <Name>Frequency Mid 9</Name>
+    <Symbol>fm_9</Symbol>
+    <Value>125</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>231</Index>
+    <Name>Filter Width Mid 9</Name>
+    <Symbol>wm_9</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>232</Index>
+    <Name>Gain Mid 9</Name>
+    <Symbol>gm_9</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>233</Index>
+    <Name>Quality factor Mid 9</Name>
+    <Symbol>qm_9</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>234</Index>
+    <Name>Hue Mid 9</Name>
+    <Symbol>huem_9</Symbol>
+    <Value>0.28125</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>236</Index>
+    <Name>Filter type Side 9</Name>
+    <Symbol>fts_9</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>237</Index>
+    <Name>Filter mode Side 9</Name>
+    <Symbol>fms_9</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>238</Index>
+    <Name>Filter slope Side 9</Name>
+    <Symbol>ss_9</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>239</Index>
+    <Name>Filter solo Side 9</Name>
+    <Symbol>xss_9</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>240</Index>
+    <Name>Filter mute Side 9</Name>
+    <Symbol>xms_9</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>241</Index>
+    <Name>Frequency Side 9</Name>
+    <Symbol>fs_9</Symbol>
+    <Value>125</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>242</Index>
+    <Name>Filter Width Side 9</Name>
+    <Symbol>ws_9</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>243</Index>
+    <Name>Gain Side 9</Name>
+    <Symbol>gs_9</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>244</Index>
+    <Name>Quality factor Side 9</Name>
+    <Symbol>qs_9</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>245</Index>
+    <Name>Hue Side 9</Name>
+    <Symbol>hues_9</Symbol>
+    <Value>0.28125</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>247</Index>
+    <Name>Filter type Mid 10</Name>
+    <Symbol>ftm_10</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>248</Index>
+    <Name>Filter mode Mid 10</Name>
+    <Symbol>fmm_10</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>249</Index>
+    <Name>Filter slope Mid 10</Name>
+    <Symbol>sm_10</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>250</Index>
+    <Name>Filter solo Mid 10</Name>
+    <Symbol>xsm_10</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>251</Index>
+    <Name>Filter mute Mid 10</Name>
+    <Symbol>xmm_10</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>252</Index>
+    <Name>Frequency Mid 10</Name>
+    <Symbol>fm_10</Symbol>
+    <Value>160</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>253</Index>
+    <Name>Filter Width Mid 10</Name>
+    <Symbol>wm_10</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>254</Index>
+    <Name>Gain Mid 10</Name>
+    <Symbol>gm_10</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>255</Index>
+    <Name>Quality factor Mid 10</Name>
+    <Symbol>qm_10</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>256</Index>
+    <Name>Hue Mid 10</Name>
+    <Symbol>huem_10</Symbol>
+    <Value>0.3125</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>258</Index>
+    <Name>Filter type Side 10</Name>
+    <Symbol>fts_10</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>259</Index>
+    <Name>Filter mode Side 10</Name>
+    <Symbol>fms_10</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>260</Index>
+    <Name>Filter slope Side 10</Name>
+    <Symbol>ss_10</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>261</Index>
+    <Name>Filter solo Side 10</Name>
+    <Symbol>xss_10</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>262</Index>
+    <Name>Filter mute Side 10</Name>
+    <Symbol>xms_10</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>263</Index>
+    <Name>Frequency Side 10</Name>
+    <Symbol>fs_10</Symbol>
+    <Value>160</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>264</Index>
+    <Name>Filter Width Side 10</Name>
+    <Symbol>ws_10</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>265</Index>
+    <Name>Gain Side 10</Name>
+    <Symbol>gs_10</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>266</Index>
+    <Name>Quality factor Side 10</Name>
+    <Symbol>qs_10</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>267</Index>
+    <Name>Hue Side 10</Name>
+    <Symbol>hues_10</Symbol>
+    <Value>0.3125</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>269</Index>
+    <Name>Filter type Mid 11</Name>
+    <Symbol>ftm_11</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>270</Index>
+    <Name>Filter mode Mid 11</Name>
+    <Symbol>fmm_11</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>271</Index>
+    <Name>Filter slope Mid 11</Name>
+    <Symbol>sm_11</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>272</Index>
+    <Name>Filter solo Mid 11</Name>
+    <Symbol>xsm_11</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>273</Index>
+    <Name>Filter mute Mid 11</Name>
+    <Symbol>xmm_11</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>274</Index>
+    <Name>Frequency Mid 11</Name>
+    <Symbol>fm_11</Symbol>
+    <Value>200</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>275</Index>
+    <Name>Filter Width Mid 11</Name>
+    <Symbol>wm_11</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>276</Index>
+    <Name>Gain Mid 11</Name>
+    <Symbol>gm_11</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>277</Index>
+    <Name>Quality factor Mid 11</Name>
+    <Symbol>qm_11</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>278</Index>
+    <Name>Hue Mid 11</Name>
+    <Symbol>huem_11</Symbol>
+    <Value>0.34375</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>280</Index>
+    <Name>Filter type Side 11</Name>
+    <Symbol>fts_11</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>281</Index>
+    <Name>Filter mode Side 11</Name>
+    <Symbol>fms_11</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>282</Index>
+    <Name>Filter slope Side 11</Name>
+    <Symbol>ss_11</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>283</Index>
+    <Name>Filter solo Side 11</Name>
+    <Symbol>xss_11</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>284</Index>
+    <Name>Filter mute Side 11</Name>
+    <Symbol>xms_11</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>285</Index>
+    <Name>Frequency Side 11</Name>
+    <Symbol>fs_11</Symbol>
+    <Value>200</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>286</Index>
+    <Name>Filter Width Side 11</Name>
+    <Symbol>ws_11</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>287</Index>
+    <Name>Gain Side 11</Name>
+    <Symbol>gs_11</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>288</Index>
+    <Name>Quality factor Side 11</Name>
+    <Symbol>qs_11</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>289</Index>
+    <Name>Hue Side 11</Name>
+    <Symbol>hues_11</Symbol>
+    <Value>0.34375</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>291</Index>
+    <Name>Filter type Mid 12</Name>
+    <Symbol>ftm_12</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>292</Index>
+    <Name>Filter mode Mid 12</Name>
+    <Symbol>fmm_12</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>293</Index>
+    <Name>Filter slope Mid 12</Name>
+    <Symbol>sm_12</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>294</Index>
+    <Name>Filter solo Mid 12</Name>
+    <Symbol>xsm_12</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>295</Index>
+    <Name>Filter mute Mid 12</Name>
+    <Symbol>xmm_12</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>296</Index>
+    <Name>Frequency Mid 12</Name>
+    <Symbol>fm_12</Symbol>
+    <Value>250</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>297</Index>
+    <Name>Filter Width Mid 12</Name>
+    <Symbol>wm_12</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>298</Index>
+    <Name>Gain Mid 12</Name>
+    <Symbol>gm_12</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>299</Index>
+    <Name>Quality factor Mid 12</Name>
+    <Symbol>qm_12</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>300</Index>
+    <Name>Hue Mid 12</Name>
+    <Symbol>huem_12</Symbol>
+    <Value>0.375</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>302</Index>
+    <Name>Filter type Side 12</Name>
+    <Symbol>fts_12</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>303</Index>
+    <Name>Filter mode Side 12</Name>
+    <Symbol>fms_12</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>304</Index>
+    <Name>Filter slope Side 12</Name>
+    <Symbol>ss_12</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>305</Index>
+    <Name>Filter solo Side 12</Name>
+    <Symbol>xss_12</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>306</Index>
+    <Name>Filter mute Side 12</Name>
+    <Symbol>xms_12</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>307</Index>
+    <Name>Frequency Side 12</Name>
+    <Symbol>fs_12</Symbol>
+    <Value>250</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>308</Index>
+    <Name>Filter Width Side 12</Name>
+    <Symbol>ws_12</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>309</Index>
+    <Name>Gain Side 12</Name>
+    <Symbol>gs_12</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>310</Index>
+    <Name>Quality factor Side 12</Name>
+    <Symbol>qs_12</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>311</Index>
+    <Name>Hue Side 12</Name>
+    <Symbol>hues_12</Symbol>
+    <Value>0.375</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>313</Index>
+    <Name>Filter type Mid 13</Name>
+    <Symbol>ftm_13</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>314</Index>
+    <Name>Filter mode Mid 13</Name>
+    <Symbol>fmm_13</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>315</Index>
+    <Name>Filter slope Mid 13</Name>
+    <Symbol>sm_13</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>316</Index>
+    <Name>Filter solo Mid 13</Name>
+    <Symbol>xsm_13</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>317</Index>
+    <Name>Filter mute Mid 13</Name>
+    <Symbol>xmm_13</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>318</Index>
+    <Name>Frequency Mid 13</Name>
+    <Symbol>fm_13</Symbol>
+    <Value>315</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>319</Index>
+    <Name>Filter Width Mid 13</Name>
+    <Symbol>wm_13</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>320</Index>
+    <Name>Gain Mid 13</Name>
+    <Symbol>gm_13</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>321</Index>
+    <Name>Quality factor Mid 13</Name>
+    <Symbol>qm_13</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>322</Index>
+    <Name>Hue Mid 13</Name>
+    <Symbol>huem_13</Symbol>
+    <Value>0.40625</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>324</Index>
+    <Name>Filter type Side 13</Name>
+    <Symbol>fts_13</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>325</Index>
+    <Name>Filter mode Side 13</Name>
+    <Symbol>fms_13</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>326</Index>
+    <Name>Filter slope Side 13</Name>
+    <Symbol>ss_13</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>327</Index>
+    <Name>Filter solo Side 13</Name>
+    <Symbol>xss_13</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>328</Index>
+    <Name>Filter mute Side 13</Name>
+    <Symbol>xms_13</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>329</Index>
+    <Name>Frequency Side 13</Name>
+    <Symbol>fs_13</Symbol>
+    <Value>315</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>330</Index>
+    <Name>Filter Width Side 13</Name>
+    <Symbol>ws_13</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>331</Index>
+    <Name>Gain Side 13</Name>
+    <Symbol>gs_13</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>332</Index>
+    <Name>Quality factor Side 13</Name>
+    <Symbol>qs_13</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>333</Index>
+    <Name>Hue Side 13</Name>
+    <Symbol>hues_13</Symbol>
+    <Value>0.40625</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>335</Index>
+    <Name>Filter type Mid 14</Name>
+    <Symbol>ftm_14</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>336</Index>
+    <Name>Filter mode Mid 14</Name>
+    <Symbol>fmm_14</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>337</Index>
+    <Name>Filter slope Mid 14</Name>
+    <Symbol>sm_14</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>338</Index>
+    <Name>Filter solo Mid 14</Name>
+    <Symbol>xsm_14</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>339</Index>
+    <Name>Filter mute Mid 14</Name>
+    <Symbol>xmm_14</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>340</Index>
+    <Name>Frequency Mid 14</Name>
+    <Symbol>fm_14</Symbol>
+    <Value>400</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>341</Index>
+    <Name>Filter Width Mid 14</Name>
+    <Symbol>wm_14</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>342</Index>
+    <Name>Gain Mid 14</Name>
+    <Symbol>gm_14</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>343</Index>
+    <Name>Quality factor Mid 14</Name>
+    <Symbol>qm_14</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>344</Index>
+    <Name>Hue Mid 14</Name>
+    <Symbol>huem_14</Symbol>
+    <Value>0.4375</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>346</Index>
+    <Name>Filter type Side 14</Name>
+    <Symbol>fts_14</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>347</Index>
+    <Name>Filter mode Side 14</Name>
+    <Symbol>fms_14</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>348</Index>
+    <Name>Filter slope Side 14</Name>
+    <Symbol>ss_14</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>349</Index>
+    <Name>Filter solo Side 14</Name>
+    <Symbol>xss_14</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>350</Index>
+    <Name>Filter mute Side 14</Name>
+    <Symbol>xms_14</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>351</Index>
+    <Name>Frequency Side 14</Name>
+    <Symbol>fs_14</Symbol>
+    <Value>400</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>352</Index>
+    <Name>Filter Width Side 14</Name>
+    <Symbol>ws_14</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>353</Index>
+    <Name>Gain Side 14</Name>
+    <Symbol>gs_14</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>354</Index>
+    <Name>Quality factor Side 14</Name>
+    <Symbol>qs_14</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>355</Index>
+    <Name>Hue Side 14</Name>
+    <Symbol>hues_14</Symbol>
+    <Value>0.4375</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>357</Index>
+    <Name>Filter type Mid 15</Name>
+    <Symbol>ftm_15</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>358</Index>
+    <Name>Filter mode Mid 15</Name>
+    <Symbol>fmm_15</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>359</Index>
+    <Name>Filter slope Mid 15</Name>
+    <Symbol>sm_15</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>360</Index>
+    <Name>Filter solo Mid 15</Name>
+    <Symbol>xsm_15</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>361</Index>
+    <Name>Filter mute Mid 15</Name>
+    <Symbol>xmm_15</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>362</Index>
+    <Name>Frequency Mid 15</Name>
+    <Symbol>fm_15</Symbol>
+    <Value>500</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>363</Index>
+    <Name>Filter Width Mid 15</Name>
+    <Symbol>wm_15</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>364</Index>
+    <Name>Gain Mid 15</Name>
+    <Symbol>gm_15</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>365</Index>
+    <Name>Quality factor Mid 15</Name>
+    <Symbol>qm_15</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>366</Index>
+    <Name>Hue Mid 15</Name>
+    <Symbol>huem_15</Symbol>
+    <Value>0.46875</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>368</Index>
+    <Name>Filter type Side 15</Name>
+    <Symbol>fts_15</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>369</Index>
+    <Name>Filter mode Side 15</Name>
+    <Symbol>fms_15</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>370</Index>
+    <Name>Filter slope Side 15</Name>
+    <Symbol>ss_15</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>371</Index>
+    <Name>Filter solo Side 15</Name>
+    <Symbol>xss_15</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>372</Index>
+    <Name>Filter mute Side 15</Name>
+    <Symbol>xms_15</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>373</Index>
+    <Name>Frequency Side 15</Name>
+    <Symbol>fs_15</Symbol>
+    <Value>500</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>374</Index>
+    <Name>Filter Width Side 15</Name>
+    <Symbol>ws_15</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>375</Index>
+    <Name>Gain Side 15</Name>
+    <Symbol>gs_15</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>376</Index>
+    <Name>Quality factor Side 15</Name>
+    <Symbol>qs_15</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>377</Index>
+    <Name>Hue Side 15</Name>
+    <Symbol>hues_15</Symbol>
+    <Value>0.46875</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>379</Index>
+    <Name>Filter type Mid 16</Name>
+    <Symbol>ftm_16</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>380</Index>
+    <Name>Filter mode Mid 16</Name>
+    <Symbol>fmm_16</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>381</Index>
+    <Name>Filter slope Mid 16</Name>
+    <Symbol>sm_16</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>382</Index>
+    <Name>Filter solo Mid 16</Name>
+    <Symbol>xsm_16</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>383</Index>
+    <Name>Filter mute Mid 16</Name>
+    <Symbol>xmm_16</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>384</Index>
+    <Name>Frequency Mid 16</Name>
+    <Symbol>fm_16</Symbol>
+    <Value>630</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>385</Index>
+    <Name>Filter Width Mid 16</Name>
+    <Symbol>wm_16</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>386</Index>
+    <Name>Gain Mid 16</Name>
+    <Symbol>gm_16</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>387</Index>
+    <Name>Quality factor Mid 16</Name>
+    <Symbol>qm_16</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>388</Index>
+    <Name>Hue Mid 16</Name>
+    <Symbol>huem_16</Symbol>
+    <Value>0.5</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>390</Index>
+    <Name>Filter type Side 16</Name>
+    <Symbol>fts_16</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>391</Index>
+    <Name>Filter mode Side 16</Name>
+    <Symbol>fms_16</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>392</Index>
+    <Name>Filter slope Side 16</Name>
+    <Symbol>ss_16</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>393</Index>
+    <Name>Filter solo Side 16</Name>
+    <Symbol>xss_16</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>394</Index>
+    <Name>Filter mute Side 16</Name>
+    <Symbol>xms_16</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>395</Index>
+    <Name>Frequency Side 16</Name>
+    <Symbol>fs_16</Symbol>
+    <Value>630</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>396</Index>
+    <Name>Filter Width Side 16</Name>
+    <Symbol>ws_16</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>397</Index>
+    <Name>Gain Side 16</Name>
+    <Symbol>gs_16</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>398</Index>
+    <Name>Quality factor Side 16</Name>
+    <Symbol>qs_16</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>399</Index>
+    <Name>Hue Side 16</Name>
+    <Symbol>hues_16</Symbol>
+    <Value>0.5</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>401</Index>
+    <Name>Filter type Mid 17</Name>
+    <Symbol>ftm_17</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>402</Index>
+    <Name>Filter mode Mid 17</Name>
+    <Symbol>fmm_17</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>403</Index>
+    <Name>Filter slope Mid 17</Name>
+    <Symbol>sm_17</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>404</Index>
+    <Name>Filter solo Mid 17</Name>
+    <Symbol>xsm_17</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>405</Index>
+    <Name>Filter mute Mid 17</Name>
+    <Symbol>xmm_17</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>406</Index>
+    <Name>Frequency Mid 17</Name>
+    <Symbol>fm_17</Symbol>
+    <Value>800</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>407</Index>
+    <Name>Filter Width Mid 17</Name>
+    <Symbol>wm_17</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>408</Index>
+    <Name>Gain Mid 17</Name>
+    <Symbol>gm_17</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>409</Index>
+    <Name>Quality factor Mid 17</Name>
+    <Symbol>qm_17</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>410</Index>
+    <Name>Hue Mid 17</Name>
+    <Symbol>huem_17</Symbol>
+    <Value>0.53125</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>412</Index>
+    <Name>Filter type Side 17</Name>
+    <Symbol>fts_17</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>413</Index>
+    <Name>Filter mode Side 17</Name>
+    <Symbol>fms_17</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>414</Index>
+    <Name>Filter slope Side 17</Name>
+    <Symbol>ss_17</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>415</Index>
+    <Name>Filter solo Side 17</Name>
+    <Symbol>xss_17</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>416</Index>
+    <Name>Filter mute Side 17</Name>
+    <Symbol>xms_17</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>417</Index>
+    <Name>Frequency Side 17</Name>
+    <Symbol>fs_17</Symbol>
+    <Value>800</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>418</Index>
+    <Name>Filter Width Side 17</Name>
+    <Symbol>ws_17</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>419</Index>
+    <Name>Gain Side 17</Name>
+    <Symbol>gs_17</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>420</Index>
+    <Name>Quality factor Side 17</Name>
+    <Symbol>qs_17</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>421</Index>
+    <Name>Hue Side 17</Name>
+    <Symbol>hues_17</Symbol>
+    <Value>0.53125</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>423</Index>
+    <Name>Filter type Mid 18</Name>
+    <Symbol>ftm_18</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>424</Index>
+    <Name>Filter mode Mid 18</Name>
+    <Symbol>fmm_18</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>425</Index>
+    <Name>Filter slope Mid 18</Name>
+    <Symbol>sm_18</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>426</Index>
+    <Name>Filter solo Mid 18</Name>
+    <Symbol>xsm_18</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>427</Index>
+    <Name>Filter mute Mid 18</Name>
+    <Symbol>xmm_18</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>428</Index>
+    <Name>Frequency Mid 18</Name>
+    <Symbol>fm_18</Symbol>
+    <Value>1000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>429</Index>
+    <Name>Filter Width Mid 18</Name>
+    <Symbol>wm_18</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>430</Index>
+    <Name>Gain Mid 18</Name>
+    <Symbol>gm_18</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>431</Index>
+    <Name>Quality factor Mid 18</Name>
+    <Symbol>qm_18</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>432</Index>
+    <Name>Hue Mid 18</Name>
+    <Symbol>huem_18</Symbol>
+    <Value>0.5625</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>434</Index>
+    <Name>Filter type Side 18</Name>
+    <Symbol>fts_18</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>435</Index>
+    <Name>Filter mode Side 18</Name>
+    <Symbol>fms_18</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>436</Index>
+    <Name>Filter slope Side 18</Name>
+    <Symbol>ss_18</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>437</Index>
+    <Name>Filter solo Side 18</Name>
+    <Symbol>xss_18</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>438</Index>
+    <Name>Filter mute Side 18</Name>
+    <Symbol>xms_18</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>439</Index>
+    <Name>Frequency Side 18</Name>
+    <Symbol>fs_18</Symbol>
+    <Value>1000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>440</Index>
+    <Name>Filter Width Side 18</Name>
+    <Symbol>ws_18</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>441</Index>
+    <Name>Gain Side 18</Name>
+    <Symbol>gs_18</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>442</Index>
+    <Name>Quality factor Side 18</Name>
+    <Symbol>qs_18</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>443</Index>
+    <Name>Hue Side 18</Name>
+    <Symbol>hues_18</Symbol>
+    <Value>0.5625</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>445</Index>
+    <Name>Filter type Mid 19</Name>
+    <Symbol>ftm_19</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>446</Index>
+    <Name>Filter mode Mid 19</Name>
+    <Symbol>fmm_19</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>447</Index>
+    <Name>Filter slope Mid 19</Name>
+    <Symbol>sm_19</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>448</Index>
+    <Name>Filter solo Mid 19</Name>
+    <Symbol>xsm_19</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>449</Index>
+    <Name>Filter mute Mid 19</Name>
+    <Symbol>xmm_19</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>450</Index>
+    <Name>Frequency Mid 19</Name>
+    <Symbol>fm_19</Symbol>
+    <Value>1250</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>451</Index>
+    <Name>Filter Width Mid 19</Name>
+    <Symbol>wm_19</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>452</Index>
+    <Name>Gain Mid 19</Name>
+    <Symbol>gm_19</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>453</Index>
+    <Name>Quality factor Mid 19</Name>
+    <Symbol>qm_19</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>454</Index>
+    <Name>Hue Mid 19</Name>
+    <Symbol>huem_19</Symbol>
+    <Value>0.59375</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>456</Index>
+    <Name>Filter type Side 19</Name>
+    <Symbol>fts_19</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>457</Index>
+    <Name>Filter mode Side 19</Name>
+    <Symbol>fms_19</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>458</Index>
+    <Name>Filter slope Side 19</Name>
+    <Symbol>ss_19</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>459</Index>
+    <Name>Filter solo Side 19</Name>
+    <Symbol>xss_19</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>460</Index>
+    <Name>Filter mute Side 19</Name>
+    <Symbol>xms_19</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>461</Index>
+    <Name>Frequency Side 19</Name>
+    <Symbol>fs_19</Symbol>
+    <Value>1250</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>462</Index>
+    <Name>Filter Width Side 19</Name>
+    <Symbol>ws_19</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>463</Index>
+    <Name>Gain Side 19</Name>
+    <Symbol>gs_19</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>464</Index>
+    <Name>Quality factor Side 19</Name>
+    <Symbol>qs_19</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>465</Index>
+    <Name>Hue Side 19</Name>
+    <Symbol>hues_19</Symbol>
+    <Value>0.59375</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>467</Index>
+    <Name>Filter type Mid 20</Name>
+    <Symbol>ftm_20</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>468</Index>
+    <Name>Filter mode Mid 20</Name>
+    <Symbol>fmm_20</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>469</Index>
+    <Name>Filter slope Mid 20</Name>
+    <Symbol>sm_20</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>470</Index>
+    <Name>Filter solo Mid 20</Name>
+    <Symbol>xsm_20</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>471</Index>
+    <Name>Filter mute Mid 20</Name>
+    <Symbol>xmm_20</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>472</Index>
+    <Name>Frequency Mid 20</Name>
+    <Symbol>fm_20</Symbol>
+    <Value>1600</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>473</Index>
+    <Name>Filter Width Mid 20</Name>
+    <Symbol>wm_20</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>474</Index>
+    <Name>Gain Mid 20</Name>
+    <Symbol>gm_20</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>475</Index>
+    <Name>Quality factor Mid 20</Name>
+    <Symbol>qm_20</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>476</Index>
+    <Name>Hue Mid 20</Name>
+    <Symbol>huem_20</Symbol>
+    <Value>0.625</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>478</Index>
+    <Name>Filter type Side 20</Name>
+    <Symbol>fts_20</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>479</Index>
+    <Name>Filter mode Side 20</Name>
+    <Symbol>fms_20</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>480</Index>
+    <Name>Filter slope Side 20</Name>
+    <Symbol>ss_20</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>481</Index>
+    <Name>Filter solo Side 20</Name>
+    <Symbol>xss_20</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>482</Index>
+    <Name>Filter mute Side 20</Name>
+    <Symbol>xms_20</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>483</Index>
+    <Name>Frequency Side 20</Name>
+    <Symbol>fs_20</Symbol>
+    <Value>1600</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>484</Index>
+    <Name>Filter Width Side 20</Name>
+    <Symbol>ws_20</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>485</Index>
+    <Name>Gain Side 20</Name>
+    <Symbol>gs_20</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>486</Index>
+    <Name>Quality factor Side 20</Name>
+    <Symbol>qs_20</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>487</Index>
+    <Name>Hue Side 20</Name>
+    <Symbol>hues_20</Symbol>
+    <Value>0.625</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>489</Index>
+    <Name>Filter type Mid 21</Name>
+    <Symbol>ftm_21</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>490</Index>
+    <Name>Filter mode Mid 21</Name>
+    <Symbol>fmm_21</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>491</Index>
+    <Name>Filter slope Mid 21</Name>
+    <Symbol>sm_21</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>492</Index>
+    <Name>Filter solo Mid 21</Name>
+    <Symbol>xsm_21</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>493</Index>
+    <Name>Filter mute Mid 21</Name>
+    <Symbol>xmm_21</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>494</Index>
+    <Name>Frequency Mid 21</Name>
+    <Symbol>fm_21</Symbol>
+    <Value>2000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>495</Index>
+    <Name>Filter Width Mid 21</Name>
+    <Symbol>wm_21</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>496</Index>
+    <Name>Gain Mid 21</Name>
+    <Symbol>gm_21</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>497</Index>
+    <Name>Quality factor Mid 21</Name>
+    <Symbol>qm_21</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>498</Index>
+    <Name>Hue Mid 21</Name>
+    <Symbol>huem_21</Symbol>
+    <Value>0.65625</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>500</Index>
+    <Name>Filter type Side 21</Name>
+    <Symbol>fts_21</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>501</Index>
+    <Name>Filter mode Side 21</Name>
+    <Symbol>fms_21</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>502</Index>
+    <Name>Filter slope Side 21</Name>
+    <Symbol>ss_21</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>503</Index>
+    <Name>Filter solo Side 21</Name>
+    <Symbol>xss_21</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>504</Index>
+    <Name>Filter mute Side 21</Name>
+    <Symbol>xms_21</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>505</Index>
+    <Name>Frequency Side 21</Name>
+    <Symbol>fs_21</Symbol>
+    <Value>2000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>506</Index>
+    <Name>Filter Width Side 21</Name>
+    <Symbol>ws_21</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>507</Index>
+    <Name>Gain Side 21</Name>
+    <Symbol>gs_21</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>508</Index>
+    <Name>Quality factor Side 21</Name>
+    <Symbol>qs_21</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>509</Index>
+    <Name>Hue Side 21</Name>
+    <Symbol>hues_21</Symbol>
+    <Value>0.65625</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>511</Index>
+    <Name>Filter type Mid 22</Name>
+    <Symbol>ftm_22</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>512</Index>
+    <Name>Filter mode Mid 22</Name>
+    <Symbol>fmm_22</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>513</Index>
+    <Name>Filter slope Mid 22</Name>
+    <Symbol>sm_22</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>514</Index>
+    <Name>Filter solo Mid 22</Name>
+    <Symbol>xsm_22</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>515</Index>
+    <Name>Filter mute Mid 22</Name>
+    <Symbol>xmm_22</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>516</Index>
+    <Name>Frequency Mid 22</Name>
+    <Symbol>fm_22</Symbol>
+    <Value>2500</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>517</Index>
+    <Name>Filter Width Mid 22</Name>
+    <Symbol>wm_22</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>518</Index>
+    <Name>Gain Mid 22</Name>
+    <Symbol>gm_22</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>519</Index>
+    <Name>Quality factor Mid 22</Name>
+    <Symbol>qm_22</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>520</Index>
+    <Name>Hue Mid 22</Name>
+    <Symbol>huem_22</Symbol>
+    <Value>0.6875</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>522</Index>
+    <Name>Filter type Side 22</Name>
+    <Symbol>fts_22</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>523</Index>
+    <Name>Filter mode Side 22</Name>
+    <Symbol>fms_22</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>524</Index>
+    <Name>Filter slope Side 22</Name>
+    <Symbol>ss_22</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>525</Index>
+    <Name>Filter solo Side 22</Name>
+    <Symbol>xss_22</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>526</Index>
+    <Name>Filter mute Side 22</Name>
+    <Symbol>xms_22</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>527</Index>
+    <Name>Frequency Side 22</Name>
+    <Symbol>fs_22</Symbol>
+    <Value>2500</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>528</Index>
+    <Name>Filter Width Side 22</Name>
+    <Symbol>ws_22</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>529</Index>
+    <Name>Gain Side 22</Name>
+    <Symbol>gs_22</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>530</Index>
+    <Name>Quality factor Side 22</Name>
+    <Symbol>qs_22</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>531</Index>
+    <Name>Hue Side 22</Name>
+    <Symbol>hues_22</Symbol>
+    <Value>0.6875</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>533</Index>
+    <Name>Filter type Mid 23</Name>
+    <Symbol>ftm_23</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>534</Index>
+    <Name>Filter mode Mid 23</Name>
+    <Symbol>fmm_23</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>535</Index>
+    <Name>Filter slope Mid 23</Name>
+    <Symbol>sm_23</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>536</Index>
+    <Name>Filter solo Mid 23</Name>
+    <Symbol>xsm_23</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>537</Index>
+    <Name>Filter mute Mid 23</Name>
+    <Symbol>xmm_23</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>538</Index>
+    <Name>Frequency Mid 23</Name>
+    <Symbol>fm_23</Symbol>
+    <Value>3150</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>539</Index>
+    <Name>Filter Width Mid 23</Name>
+    <Symbol>wm_23</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>540</Index>
+    <Name>Gain Mid 23</Name>
+    <Symbol>gm_23</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>541</Index>
+    <Name>Quality factor Mid 23</Name>
+    <Symbol>qm_23</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>542</Index>
+    <Name>Hue Mid 23</Name>
+    <Symbol>huem_23</Symbol>
+    <Value>0.71875</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>544</Index>
+    <Name>Filter type Side 23</Name>
+    <Symbol>fts_23</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>545</Index>
+    <Name>Filter mode Side 23</Name>
+    <Symbol>fms_23</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>546</Index>
+    <Name>Filter slope Side 23</Name>
+    <Symbol>ss_23</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>547</Index>
+    <Name>Filter solo Side 23</Name>
+    <Symbol>xss_23</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>548</Index>
+    <Name>Filter mute Side 23</Name>
+    <Symbol>xms_23</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>549</Index>
+    <Name>Frequency Side 23</Name>
+    <Symbol>fs_23</Symbol>
+    <Value>3150</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>550</Index>
+    <Name>Filter Width Side 23</Name>
+    <Symbol>ws_23</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>551</Index>
+    <Name>Gain Side 23</Name>
+    <Symbol>gs_23</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>552</Index>
+    <Name>Quality factor Side 23</Name>
+    <Symbol>qs_23</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>553</Index>
+    <Name>Hue Side 23</Name>
+    <Symbol>hues_23</Symbol>
+    <Value>0.71875</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>555</Index>
+    <Name>Filter type Mid 24</Name>
+    <Symbol>ftm_24</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>556</Index>
+    <Name>Filter mode Mid 24</Name>
+    <Symbol>fmm_24</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>557</Index>
+    <Name>Filter slope Mid 24</Name>
+    <Symbol>sm_24</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>558</Index>
+    <Name>Filter solo Mid 24</Name>
+    <Symbol>xsm_24</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>559</Index>
+    <Name>Filter mute Mid 24</Name>
+    <Symbol>xmm_24</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>560</Index>
+    <Name>Frequency Mid 24</Name>
+    <Symbol>fm_24</Symbol>
+    <Value>4000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>561</Index>
+    <Name>Filter Width Mid 24</Name>
+    <Symbol>wm_24</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>562</Index>
+    <Name>Gain Mid 24</Name>
+    <Symbol>gm_24</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>563</Index>
+    <Name>Quality factor Mid 24</Name>
+    <Symbol>qm_24</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>564</Index>
+    <Name>Hue Mid 24</Name>
+    <Symbol>huem_24</Symbol>
+    <Value>0.75</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>566</Index>
+    <Name>Filter type Side 24</Name>
+    <Symbol>fts_24</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>567</Index>
+    <Name>Filter mode Side 24</Name>
+    <Symbol>fms_24</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>568</Index>
+    <Name>Filter slope Side 24</Name>
+    <Symbol>ss_24</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>569</Index>
+    <Name>Filter solo Side 24</Name>
+    <Symbol>xss_24</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>570</Index>
+    <Name>Filter mute Side 24</Name>
+    <Symbol>xms_24</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>571</Index>
+    <Name>Frequency Side 24</Name>
+    <Symbol>fs_24</Symbol>
+    <Value>4000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>572</Index>
+    <Name>Filter Width Side 24</Name>
+    <Symbol>ws_24</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>573</Index>
+    <Name>Gain Side 24</Name>
+    <Symbol>gs_24</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>574</Index>
+    <Name>Quality factor Side 24</Name>
+    <Symbol>qs_24</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>575</Index>
+    <Name>Hue Side 24</Name>
+    <Symbol>hues_24</Symbol>
+    <Value>0.75</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>577</Index>
+    <Name>Filter type Mid 25</Name>
+    <Symbol>ftm_25</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>578</Index>
+    <Name>Filter mode Mid 25</Name>
+    <Symbol>fmm_25</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>579</Index>
+    <Name>Filter slope Mid 25</Name>
+    <Symbol>sm_25</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>580</Index>
+    <Name>Filter solo Mid 25</Name>
+    <Symbol>xsm_25</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>581</Index>
+    <Name>Filter mute Mid 25</Name>
+    <Symbol>xmm_25</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>582</Index>
+    <Name>Frequency Mid 25</Name>
+    <Symbol>fm_25</Symbol>
+    <Value>5000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>583</Index>
+    <Name>Filter Width Mid 25</Name>
+    <Symbol>wm_25</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>584</Index>
+    <Name>Gain Mid 25</Name>
+    <Symbol>gm_25</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>585</Index>
+    <Name>Quality factor Mid 25</Name>
+    <Symbol>qm_25</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>586</Index>
+    <Name>Hue Mid 25</Name>
+    <Symbol>huem_25</Symbol>
+    <Value>0.78125</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>588</Index>
+    <Name>Filter type Side 25</Name>
+    <Symbol>fts_25</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>589</Index>
+    <Name>Filter mode Side 25</Name>
+    <Symbol>fms_25</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>590</Index>
+    <Name>Filter slope Side 25</Name>
+    <Symbol>ss_25</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>591</Index>
+    <Name>Filter solo Side 25</Name>
+    <Symbol>xss_25</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>592</Index>
+    <Name>Filter mute Side 25</Name>
+    <Symbol>xms_25</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>593</Index>
+    <Name>Frequency Side 25</Name>
+    <Symbol>fs_25</Symbol>
+    <Value>5000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>594</Index>
+    <Name>Filter Width Side 25</Name>
+    <Symbol>ws_25</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>595</Index>
+    <Name>Gain Side 25</Name>
+    <Symbol>gs_25</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>596</Index>
+    <Name>Quality factor Side 25</Name>
+    <Symbol>qs_25</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>597</Index>
+    <Name>Hue Side 25</Name>
+    <Symbol>hues_25</Symbol>
+    <Value>0.78125</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>599</Index>
+    <Name>Filter type Mid 26</Name>
+    <Symbol>ftm_26</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>600</Index>
+    <Name>Filter mode Mid 26</Name>
+    <Symbol>fmm_26</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>601</Index>
+    <Name>Filter slope Mid 26</Name>
+    <Symbol>sm_26</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>602</Index>
+    <Name>Filter solo Mid 26</Name>
+    <Symbol>xsm_26</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>603</Index>
+    <Name>Filter mute Mid 26</Name>
+    <Symbol>xmm_26</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>604</Index>
+    <Name>Frequency Mid 26</Name>
+    <Symbol>fm_26</Symbol>
+    <Value>6300</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>605</Index>
+    <Name>Filter Width Mid 26</Name>
+    <Symbol>wm_26</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>606</Index>
+    <Name>Gain Mid 26</Name>
+    <Symbol>gm_26</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>607</Index>
+    <Name>Quality factor Mid 26</Name>
+    <Symbol>qm_26</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>608</Index>
+    <Name>Hue Mid 26</Name>
+    <Symbol>huem_26</Symbol>
+    <Value>0.8125</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>610</Index>
+    <Name>Filter type Side 26</Name>
+    <Symbol>fts_26</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>611</Index>
+    <Name>Filter mode Side 26</Name>
+    <Symbol>fms_26</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>612</Index>
+    <Name>Filter slope Side 26</Name>
+    <Symbol>ss_26</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>613</Index>
+    <Name>Filter solo Side 26</Name>
+    <Symbol>xss_26</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>614</Index>
+    <Name>Filter mute Side 26</Name>
+    <Symbol>xms_26</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>615</Index>
+    <Name>Frequency Side 26</Name>
+    <Symbol>fs_26</Symbol>
+    <Value>6300</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>616</Index>
+    <Name>Filter Width Side 26</Name>
+    <Symbol>ws_26</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>617</Index>
+    <Name>Gain Side 26</Name>
+    <Symbol>gs_26</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>618</Index>
+    <Name>Quality factor Side 26</Name>
+    <Symbol>qs_26</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>619</Index>
+    <Name>Hue Side 26</Name>
+    <Symbol>hues_26</Symbol>
+    <Value>0.8125</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>621</Index>
+    <Name>Filter type Mid 27</Name>
+    <Symbol>ftm_27</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>622</Index>
+    <Name>Filter mode Mid 27</Name>
+    <Symbol>fmm_27</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>623</Index>
+    <Name>Filter slope Mid 27</Name>
+    <Symbol>sm_27</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>624</Index>
+    <Name>Filter solo Mid 27</Name>
+    <Symbol>xsm_27</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>625</Index>
+    <Name>Filter mute Mid 27</Name>
+    <Symbol>xmm_27</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>626</Index>
+    <Name>Frequency Mid 27</Name>
+    <Symbol>fm_27</Symbol>
+    <Value>8000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>627</Index>
+    <Name>Filter Width Mid 27</Name>
+    <Symbol>wm_27</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>628</Index>
+    <Name>Gain Mid 27</Name>
+    <Symbol>gm_27</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>629</Index>
+    <Name>Quality factor Mid 27</Name>
+    <Symbol>qm_27</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>630</Index>
+    <Name>Hue Mid 27</Name>
+    <Symbol>huem_27</Symbol>
+    <Value>0.84375</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>632</Index>
+    <Name>Filter type Side 27</Name>
+    <Symbol>fts_27</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>633</Index>
+    <Name>Filter mode Side 27</Name>
+    <Symbol>fms_27</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>634</Index>
+    <Name>Filter slope Side 27</Name>
+    <Symbol>ss_27</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>635</Index>
+    <Name>Filter solo Side 27</Name>
+    <Symbol>xss_27</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>636</Index>
+    <Name>Filter mute Side 27</Name>
+    <Symbol>xms_27</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>637</Index>
+    <Name>Frequency Side 27</Name>
+    <Symbol>fs_27</Symbol>
+    <Value>8000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>638</Index>
+    <Name>Filter Width Side 27</Name>
+    <Symbol>ws_27</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>639</Index>
+    <Name>Gain Side 27</Name>
+    <Symbol>gs_27</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>640</Index>
+    <Name>Quality factor Side 27</Name>
+    <Symbol>qs_27</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>641</Index>
+    <Name>Hue Side 27</Name>
+    <Symbol>hues_27</Symbol>
+    <Value>0.84375</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>643</Index>
+    <Name>Filter type Mid 28</Name>
+    <Symbol>ftm_28</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>644</Index>
+    <Name>Filter mode Mid 28</Name>
+    <Symbol>fmm_28</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>645</Index>
+    <Name>Filter slope Mid 28</Name>
+    <Symbol>sm_28</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>646</Index>
+    <Name>Filter solo Mid 28</Name>
+    <Symbol>xsm_28</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>647</Index>
+    <Name>Filter mute Mid 28</Name>
+    <Symbol>xmm_28</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>648</Index>
+    <Name>Frequency Mid 28</Name>
+    <Symbol>fm_28</Symbol>
+    <Value>10000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>649</Index>
+    <Name>Filter Width Mid 28</Name>
+    <Symbol>wm_28</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>650</Index>
+    <Name>Gain Mid 28</Name>
+    <Symbol>gm_28</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>651</Index>
+    <Name>Quality factor Mid 28</Name>
+    <Symbol>qm_28</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>652</Index>
+    <Name>Hue Mid 28</Name>
+    <Symbol>huem_28</Symbol>
+    <Value>0.875</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>654</Index>
+    <Name>Filter type Side 28</Name>
+    <Symbol>fts_28</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>655</Index>
+    <Name>Filter mode Side 28</Name>
+    <Symbol>fms_28</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>656</Index>
+    <Name>Filter slope Side 28</Name>
+    <Symbol>ss_28</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>657</Index>
+    <Name>Filter solo Side 28</Name>
+    <Symbol>xss_28</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>658</Index>
+    <Name>Filter mute Side 28</Name>
+    <Symbol>xms_28</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>659</Index>
+    <Name>Frequency Side 28</Name>
+    <Symbol>fs_28</Symbol>
+    <Value>10000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>660</Index>
+    <Name>Filter Width Side 28</Name>
+    <Symbol>ws_28</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>661</Index>
+    <Name>Gain Side 28</Name>
+    <Symbol>gs_28</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>662</Index>
+    <Name>Quality factor Side 28</Name>
+    <Symbol>qs_28</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>663</Index>
+    <Name>Hue Side 28</Name>
+    <Symbol>hues_28</Symbol>
+    <Value>0.875</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>665</Index>
+    <Name>Filter type Mid 29</Name>
+    <Symbol>ftm_29</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>666</Index>
+    <Name>Filter mode Mid 29</Name>
+    <Symbol>fmm_29</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>667</Index>
+    <Name>Filter slope Mid 29</Name>
+    <Symbol>sm_29</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>668</Index>
+    <Name>Filter solo Mid 29</Name>
+    <Symbol>xsm_29</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>669</Index>
+    <Name>Filter mute Mid 29</Name>
+    <Symbol>xmm_29</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>670</Index>
+    <Name>Frequency Mid 29</Name>
+    <Symbol>fm_29</Symbol>
+    <Value>12500</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>671</Index>
+    <Name>Filter Width Mid 29</Name>
+    <Symbol>wm_29</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>672</Index>
+    <Name>Gain Mid 29</Name>
+    <Symbol>gm_29</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>673</Index>
+    <Name>Quality factor Mid 29</Name>
+    <Symbol>qm_29</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>674</Index>
+    <Name>Hue Mid 29</Name>
+    <Symbol>huem_29</Symbol>
+    <Value>0.90625</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>676</Index>
+    <Name>Filter type Side 29</Name>
+    <Symbol>fts_29</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>677</Index>
+    <Name>Filter mode Side 29</Name>
+    <Symbol>fms_29</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>678</Index>
+    <Name>Filter slope Side 29</Name>
+    <Symbol>ss_29</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>679</Index>
+    <Name>Filter solo Side 29</Name>
+    <Symbol>xss_29</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>680</Index>
+    <Name>Filter mute Side 29</Name>
+    <Symbol>xms_29</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>681</Index>
+    <Name>Frequency Side 29</Name>
+    <Symbol>fs_29</Symbol>
+    <Value>12500</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>682</Index>
+    <Name>Filter Width Side 29</Name>
+    <Symbol>ws_29</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>683</Index>
+    <Name>Gain Side 29</Name>
+    <Symbol>gs_29</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>684</Index>
+    <Name>Quality factor Side 29</Name>
+    <Symbol>qs_29</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>685</Index>
+    <Name>Hue Side 29</Name>
+    <Symbol>hues_29</Symbol>
+    <Value>0.90625</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>687</Index>
+    <Name>Filter type Mid 30</Name>
+    <Symbol>ftm_30</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>688</Index>
+    <Name>Filter mode Mid 30</Name>
+    <Symbol>fmm_30</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>689</Index>
+    <Name>Filter slope Mid 30</Name>
+    <Symbol>sm_30</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>690</Index>
+    <Name>Filter solo Mid 30</Name>
+    <Symbol>xsm_30</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>691</Index>
+    <Name>Filter mute Mid 30</Name>
+    <Symbol>xmm_30</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>692</Index>
+    <Name>Frequency Mid 30</Name>
+    <Symbol>fm_30</Symbol>
+    <Value>16000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>693</Index>
+    <Name>Filter Width Mid 30</Name>
+    <Symbol>wm_30</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>694</Index>
+    <Name>Gain Mid 30</Name>
+    <Symbol>gm_30</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>695</Index>
+    <Name>Quality factor Mid 30</Name>
+    <Symbol>qm_30</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>696</Index>
+    <Name>Hue Mid 30</Name>
+    <Symbol>huem_30</Symbol>
+    <Value>0.9375</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>698</Index>
+    <Name>Filter type Side 30</Name>
+    <Symbol>fts_30</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>699</Index>
+    <Name>Filter mode Side 30</Name>
+    <Symbol>fms_30</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>700</Index>
+    <Name>Filter slope Side 30</Name>
+    <Symbol>ss_30</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>701</Index>
+    <Name>Filter solo Side 30</Name>
+    <Symbol>xss_30</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>702</Index>
+    <Name>Filter mute Side 30</Name>
+    <Symbol>xms_30</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>703</Index>
+    <Name>Frequency Side 30</Name>
+    <Symbol>fs_30</Symbol>
+    <Value>16000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>704</Index>
+    <Name>Filter Width Side 30</Name>
+    <Symbol>ws_30</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>705</Index>
+    <Name>Gain Side 30</Name>
+    <Symbol>gs_30</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>706</Index>
+    <Name>Quality factor Side 30</Name>
+    <Symbol>qs_30</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>707</Index>
+    <Name>Hue Side 30</Name>
+    <Symbol>hues_30</Symbol>
+    <Value>0.9375</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>709</Index>
+    <Name>Filter type Mid 31</Name>
+    <Symbol>ftm_31</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>710</Index>
+    <Name>Filter mode Mid 31</Name>
+    <Symbol>fmm_31</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>711</Index>
+    <Name>Filter slope Mid 31</Name>
+    <Symbol>sm_31</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>712</Index>
+    <Name>Filter solo Mid 31</Name>
+    <Symbol>xsm_31</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>713</Index>
+    <Name>Filter mute Mid 31</Name>
+    <Symbol>xmm_31</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>714</Index>
+    <Name>Frequency Mid 31</Name>
+    <Symbol>fm_31</Symbol>
+    <Value>20000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>715</Index>
+    <Name>Filter Width Mid 31</Name>
+    <Symbol>wm_31</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>716</Index>
+    <Name>Gain Mid 31</Name>
+    <Symbol>gm_31</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>717</Index>
+    <Name>Quality factor Mid 31</Name>
+    <Symbol>qm_31</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>718</Index>
+    <Name>Hue Mid 31</Name>
+    <Symbol>huem_31</Symbol>
+    <Value>0.96875</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>720</Index>
+    <Name>Filter type Side 31</Name>
+    <Symbol>fts_31</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>721</Index>
+    <Name>Filter mode Side 31</Name>
+    <Symbol>fms_31</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>722</Index>
+    <Name>Filter slope Side 31</Name>
+    <Symbol>ss_31</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>723</Index>
+    <Name>Filter solo Side 31</Name>
+    <Symbol>xss_31</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>724</Index>
+    <Name>Filter mute Side 31</Name>
+    <Symbol>xms_31</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>725</Index>
+    <Name>Frequency Side 31</Name>
+    <Symbol>fs_31</Symbol>
+    <Value>20000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>726</Index>
+    <Name>Filter Width Side 31</Name>
+    <Symbol>ws_31</Symbol>
+    <Value>4</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>727</Index>
+    <Name>Gain Side 31</Name>
+    <Symbol>gs_31</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>728</Index>
+    <Name>Quality factor Side 31</Name>
+    <Symbol>qs_31</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>729</Index>
+    <Name>Hue Side 31</Name>
+    <Symbol>hues_31</Symbol>
+    <Value>0.96875</Value>
+   </Parameter>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/property</Type>
+    <Key>CarlaSkinIsCompacted</Key>
+    <Value>false</Value>
+   </CustomData>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/property</Type>
+    <Key>CarlaSkin</Key>
+    <Value>default</Value>
+   </CustomData>
+  </Data>
+ </Plugin>
+
+ <!-- LSP Sidechain Compressor Stereo -->
+ <Plugin>
+  <Info>
+   <Type>LV2</Type>
+   <Name>LSP Sidechain Compressor Stereo</Name>
+   <URI>http://lsp-plug.in/plugins/lv2/sc_compressor_stereo</URI>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x1</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Enabled</Name>
+    <Symbol>enabled</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Input gain</Name>
+    <Symbol>g_in</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>Output gain</Name>
+    <Symbol>g_out</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>3</Index>
+    <Name>Pause graph analysis</Name>
+    <Symbol>pause</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>4</Index>
+    <Name>Clear graph analysis</Name>
+    <Symbol>clear</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>5</Index>
+    <Name>Stereo split</Name>
+    <Symbol>ssplit</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>6</Index>
+    <Name>Split sidechain source</Name>
+    <Symbol>sscs</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>7</Index>
+    <Name>Sidechain type</Name>
+    <Symbol>sct</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>8</Index>
+    <Name>Sidechain mode</Name>
+    <Symbol>scm</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>9</Index>
+    <Name>Sidechain lookahead</Name>
+    <Symbol>sla</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>10</Index>
+    <Name>Sidechain listen</Name>
+    <Symbol>scl</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>11</Index>
+    <Name>Sidechain source</Name>
+    <Symbol>scs</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>12</Index>
+    <Name>Sidechain reactivity</Name>
+    <Symbol>scr</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>13</Index>
+    <Name>Sidechain preamp</Name>
+    <Symbol>scp</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>14</Index>
+    <Name>High-pass filter mode</Name>
+    <Symbol>shpm</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>15</Index>
+    <Name>High-pass filter frequency</Name>
+    <Symbol>shpf</Symbol>
+    <Value>10</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>16</Index>
+    <Name>Low-pass filter mode</Name>
+    <Symbol>slpm</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>17</Index>
+    <Name>Low-pass filter frequency</Name>
+    <Symbol>slpf</Symbol>
+    <Value>20000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>18</Index>
+    <Name>Compression mode</Name>
+    <Symbol>cm</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>19</Index>
+    <Name>Attack threshold</Name>
+    <Symbol>al</Symbol>
+    <Value>0.251188635826111</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>20</Index>
+    <Name>Attack time</Name>
+    <Symbol>at</Symbol>
+    <Value>24</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>21</Index>
+    <Name>Release threshold</Name>
+    <Symbol>rrl</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>22</Index>
+    <Name>Release time</Name>
+    <Symbol>rt</Symbol>
+    <Value>96</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>23</Index>
+    <Name>Ratio</Name>
+    <Symbol>cr</Symbol>
+    <Value>100</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>24</Index>
+    <Name>Knee</Name>
+    <Symbol>kn</Symbol>
+    <Value>0.0631000027060509</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>25</Index>
+    <Name>Boost threshold</Name>
+    <Symbol>bth</Symbol>
+    <Value>0.000251188554102555</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>26</Index>
+    <Name>Boost signal amount</Name>
+    <Symbol>bsa</Symbol>
+    <Value>1.99526226520538</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>27</Index>
+    <Name>Makeup gain</Name>
+    <Symbol>mk</Symbol>
+    <Value>1.99526226520538</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>28</Index>
+    <Name>Dry gain</Name>
+    <Symbol>cdr</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>29</Index>
+    <Name>Wet gain</Name>
+    <Symbol>cwt</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>31</Index>
+    <Name>Sidechain level visibility Left</Name>
+    <Symbol>slv_l</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>32</Index>
+    <Name>Envelope level visibility Left</Name>
+    <Symbol>elv_l</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>33</Index>
+    <Name>Gain reduction visibility Left</Name>
+    <Symbol>grv_l</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>34</Index>
+    <Name>Input level visibility Left</Name>
+    <Symbol>ilv_l</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>35</Index>
+    <Name>Output level visibility Left</Name>
+    <Symbol>olv_l</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>42</Index>
+    <Name>Sidechain level visibility Right</Name>
+    <Symbol>slv_r</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>43</Index>
+    <Name>Envelope level visibility Right</Name>
+    <Symbol>elv_r</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>44</Index>
+    <Name>Gain reduction visibility Right</Name>
+    <Symbol>grv_r</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>45</Index>
+    <Name>Input level visibility Right</Name>
+    <Symbol>ilv_r</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>46</Index>
+    <Name>Output level visibility Right</Name>
+    <Symbol>olv_r</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/property</Type>
+    <Key>CarlaSkin</Key>
+    <Value>default</Value>
+   </CustomData>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/property</Type>
+    <Key>CarlaSkinIsCompacted</Key>
+    <Value>false</Value>
+   </CustomData>
+  </Data>
+ </Plugin>
+
+ <!-- Calf Stereo Tools -->
+ <Plugin>
+  <Info>
+   <Type>LV2</Type>
+   <Name>Calf Stereo Tools</Name>
+   <URI>http://calf.sourceforge.net/plugins/StereoTools</URI>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x3f1</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Bypass</Name>
+    <Symbol>bypass</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Input Gain</Name>
+    <Symbol>level_in</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>Output Gain</Name>
+    <Symbol>level_out</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>11</Index>
+    <Name>Balance In</Name>
+    <Symbol>balance_in</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>12</Index>
+    <Name>Balance Out</Name>
+    <Symbol>balance_out</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>13</Index>
+    <Name>Softclip</Name>
+    <Symbol>softclip</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>14</Index>
+    <Name>Mute L</Name>
+    <Symbol>mutel</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>15</Index>
+    <Name>Mute R</Name>
+    <Symbol>muter</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>16</Index>
+    <Name>Phase L</Name>
+    <Symbol>phasel</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>17</Index>
+    <Name>Phase R</Name>
+    <Symbol>phaser</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>18</Index>
+    <Name>Mode</Name>
+    <Symbol>mode</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>19</Index>
+    <Name>S Level</Name>
+    <Symbol>slev</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>20</Index>
+    <Name>S Bal</Name>
+    <Symbol>sbal</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>21</Index>
+    <Name>M Level</Name>
+    <Symbol>mlev</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>22</Index>
+    <Name>M Pan</Name>
+    <Symbol>mpan</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>23</Index>
+    <Name>Stereo Base</Name>
+    <Symbol>stereo_base</Symbol>
+    <Value>0.151999950408936</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>24</Index>
+    <Name>Delay</Name>
+    <Symbol>delay</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>26</Index>
+    <Name>S/C Level</Name>
+    <Symbol>sc_level</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>27</Index>
+    <Name>Stereo Phase</Name>
+    <Symbol>stereo_phase</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/property</Type>
+    <Key>CarlaSkin</Key>
+    <Value>default</Value>
+   </CustomData>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/property</Type>
+    <Key>CarlaSkinIsCompacted</Key>
+    <Value>false</Value>
+   </CustomData>
+  </Data>
+ </Plugin>
+
+ <!-- LSP Impulse Responses Stereo -->
+ <Plugin>
+  <Info>
+   <Type>LV2</Type>
+   <Name>LSP Impulse Responses Stereo</Name>
+   <URI>http://lsp-plug.in/plugins/lv2/impulse_responses_stereo</URI>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x1</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Enabled</Name>
+    <Symbol>enabled</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>FFT size</Name>
+    <Symbol>fft</Symbol>
+    <Value>6</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>Dry amount</Name>
+    <Symbol>dry</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>3</Index>
+    <Name>Wet amount</Name>
+    <Symbol>wet</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>4</Index>
+    <Name>Output gain</Name>
+    <Symbol>g_out</Symbol>
+    <Value>3.98107171058655</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>5</Index>
+    <Name>File selector</Name>
+    <Symbol>fsel</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>6</Index>
+    <Name>Head cut 1</Name>
+    <Symbol>ihc0</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>7</Index>
+    <Name>Tail cut 1</Name>
+    <Symbol>itc0</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>8</Index>
+    <Name>Fade in 1</Name>
+    <Symbol>ifi0</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>9</Index>
+    <Name>Fade out 1</Name>
+    <Symbol>ifo0</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>10</Index>
+    <Name>Impulse listen 1</Name>
+    <Symbol>ils0</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>13</Index>
+    <Name>Head cut 2</Name>
+    <Symbol>ihc1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>14</Index>
+    <Name>Tail cut 2</Name>
+    <Symbol>itc1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>15</Index>
+    <Name>Fade in 2</Name>
+    <Symbol>ifi1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>16</Index>
+    <Name>Fade out 2</Name>
+    <Symbol>ifo1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>17</Index>
+    <Name>Impulse listen 2</Name>
+    <Symbol>ils1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>20</Index>
+    <Name>Channel source Left</Name>
+    <Symbol>cs_l</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>21</Index>
+    <Name>Makeup gain Left</Name>
+    <Symbol>mk_l</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>23</Index>
+    <Name>Pre-delay Left</Name>
+    <Symbol>pd_l</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>24</Index>
+    <Name>Channel source Right</Name>
+    <Symbol>cs_r</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>25</Index>
+    <Name>Makeup gain Right</Name>
+    <Symbol>mk_r</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>27</Index>
+    <Name>Pre-delay Right</Name>
+    <Symbol>pd_r</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>28</Index>
+    <Name>Wet post-process</Name>
+    <Symbol>wpp</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>29</Index>
+    <Name>Equalizer visibility</Name>
+    <Symbol>eqv</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>30</Index>
+    <Name>Low-cut mode</Name>
+    <Symbol>lcm</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>31</Index>
+    <Name>Low-cut frequency</Name>
+    <Symbol>lcf</Symbol>
+    <Value>50</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>32</Index>
+    <Name>Band 50Hz gain</Name>
+    <Symbol>eq_0</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>33</Index>
+    <Name>Band 107Hz gain</Name>
+    <Symbol>eq_1</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>34</Index>
+    <Name>Band 227Hz gain</Name>
+    <Symbol>eq_2</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>35</Index>
+    <Name>Band 484Hz gain</Name>
+    <Symbol>eq_3</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>36</Index>
+    <Name>Band 1 kHz gain</Name>
+    <Symbol>eq_4</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>37</Index>
+    <Name>Band 2.2 kHz gain</Name>
+    <Symbol>eq_5</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>38</Index>
+    <Name>Band 4.7 kHz gain</Name>
+    <Symbol>eq_6</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>39</Index>
+    <Name>Band 10 kHz gain</Name>
+    <Symbol>eq_7</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>40</Index>
+    <Name>High-cut mode</Name>
+    <Symbol>hcm</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>41</Index>
+    <Name>High-cut frequency</Name>
+    <Symbol>hcf</Symbol>
+    <Value>10000</Value>
+   </Parameter>
+
+   <CustomData>
+    <Type>http://lv2plug.in/ns/ext/atom#Path</Type>
+    <Key>http://lsp-plug.in/plugins/lv2/impulse_responses_stereo/ports#ifn0</Key>
+    <Value>IR_60ms_30dB_5t_18s_0c.wav</Value>
+   </CustomData>
+  </Data>
+ </Plugin>
+
+ <ExternalPatchbay>
+  <Connection>
+   <Source>PCM2902 Audio Codec Analog Stereo:capture_FR</Source>
+   <Target>LSP Expander Mono:Input</Target>
+  </Connection>
+  <Connection>
+   <Source>Firefox:output_FL-6084</Source>
+   <Target>Dummy Audio/Sink sink:playback_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>Firefox:output_FR-6085</Source>
+   <Target>Dummy Audio/Sink sink:playback_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>LSP Mixer x4 Stereo:Output L</Source>
+   <Target>LSP Sidechain Multiband Compressor Stereo x8:Input L</Target>
+  </Connection>
+  <Connection>
+   <Source>LSP Mixer x4 Stereo:Output R</Source>
+   <Target>LSP Sidechain Multiband Compressor Stereo x8:Input R</Target>
+  </Connection>
+  <Connection>
+   <Source>Calf Stereo Tools:Out L</Source>
+   <Target>LSP Impulse Responses Stereo:Input L</Target>
+  </Connection>
+  <Connection>
+   <Source>Calf Stereo Tools:Out R</Source>
+   <Target>LSP Impulse Responses Stereo:Input R</Target>
+  </Connection>
+  <Connection>
+   <Source>LSP Sidechain Compressor Stereo:Output L</Source>
+   <Target>Calf Stereo Tools:In L</Target>
+  </Connection>
+  <Connection>
+   <Source>LSP Sidechain Compressor Stereo:Output R</Source>
+   <Target>Calf Stereo Tools:In R</Target>
+  </Connection>
+  <Connection>
+   <Source>Calf Tape Simulator:Out L</Source>
+   <Target>LSP Parametric Equalizer x8 Stereo:Input L</Target>
+  </Connection>
+  <Connection>
+   <Source>Calf Tape Simulator:Out R</Source>
+   <Target>LSP Parametric Equalizer x8 Stereo:Input R</Target>
+  </Connection>
+  <Connection>
+   <Source>gx_head_fx:out_0</Source>
+   <Target>Calf Tape Simulator:In L</Target>
+  </Connection>
+  <Connection>
+   <Source>gx_head_fx:out_1</Source>
+   <Target>Calf Tape Simulator:In R</Target>
+  </Connection>
+  <Connection>
+   <Source>gx_head_amp-204:out_0</Source>
+   <Target>gx_head_fx-204:in_0</Target>
+  </Connection>
+  <Connection>
+   <Source>Calf Reverb:Out L</Source>
+   <Target>LSP Parametric Equalizer x32 MidSide:Input L</Target>
+  </Connection>
+  <Connection>
+   <Source>Calf Reverb:Out R</Source>
+   <Target>LSP Parametric Equalizer x32 MidSide:Input R</Target>
+  </Connection>
+  <Connection>
+   <Source>Firefox:output_FL</Source>
+   <Target>Dummy Audio/Sink sink:playback_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>Firefox:output_FR</Source>
+   <Target>Dummy Audio/Sink sink:playback_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>gx_head_fx-204:out_0</Source>
+   <Target>Calf Tape Simulator:In L</Target>
+  </Connection>
+  <Connection>
+   <Source>gx_head_fx-204:out_1</Source>
+   <Target>Calf Tape Simulator:In R</Target>
+  </Connection>
+  <Connection>
+   <Source>LSP Parametric Equalizer x32 MidSide:Output L</Source>
+   <Target>LSP Sidechain Compressor Stereo:Input L</Target>
+  </Connection>
+  <Connection>
+   <Source>LSP Parametric Equalizer x32 MidSide:Output R</Source>
+   <Target>LSP Sidechain Compressor Stereo:Input R</Target>
+  </Connection>
+  <Connection>
+   <Source>LSP Sidechain Multiband Compressor Stereo x8:Output L</Source>
+   <Target>Calf Reverb:In L</Target>
+  </Connection>
+  <Connection>
+   <Source>LSP Sidechain Multiband Compressor Stereo x8:Output R</Source>
+   <Target>Calf Reverb:In R</Target>
+  </Connection>
+  <Connection>
+   <Source>LSP Expander Mono:Output</Source>
+   <Target>gx_head_amp-204:in_0</Target>
+  </Connection>
+  <Connection>
+   <Source>LSP Expander Mono:Output</Source>
+   <Target>gx_head_amp:in_0</Target>
+  </Connection>
+  <Connection>
+   <Source>LSP Parametric Equalizer x8 Stereo:Output L</Source>
+   <Target>LSP Mixer x4 Stereo:Audio input left 3</Target>
+  </Connection>
+  <Connection>
+   <Source>LSP Parametric Equalizer x8 Stereo:Output R</Source>
+   <Target>LSP Mixer x4 Stereo:Audio input right 3</Target>
+  </Connection>
+  <Connection>
+   <Source>LSP Impulse Responses Stereo:Output L</Source>
+   <Target>PCM2902 Audio Codec Analog Stereo:playback_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>LSP Impulse Responses Stereo:Output R</Source>
+   <Target>PCM2902 Audio Codec Analog Stereo:playback_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>gx_head_amp:out_0</Source>
+   <Target>gx_head_fx:in_0</Target>
+  </Connection>
+  <Connection>
+   <Source>Dummy Audio/Sink sink:monitor_FL</Source>
+   <Target>LSP Mixer x4 Stereo:Input L</Target>
+  </Connection>
+  <Connection>
+   <Source>Dummy Audio/Sink sink:monitor_FR</Source>
+   <Target>LSP Mixer x4 Stereo:Input R</Target>
+  </Connection>
+  <Connection>
+   <Source>LSP Mixer x4 Stereo:events-out</Source>
+   <Target>LSP Sidechain Multiband Compressor Stereo x8:events-in</Target>
+  </Connection>
+  <Connection>
+   <Source>Calf Stereo Tools:events-out</Source>
+   <Target>LSP Impulse Responses Stereo:events-in</Target>
+  </Connection>
+  <Connection>
+   <Source>LSP Sidechain Compressor Stereo:events-out</Source>
+   <Target>Calf Stereo Tools:events-in</Target>
+  </Connection>
+  <Connection>
+   <Source>Calf Tape Simulator:events-out</Source>
+   <Target>LSP Parametric Equalizer x8 Stereo:events-in</Target>
+  </Connection>
+  <Connection>
+   <Source>Calf Reverb:events-out</Source>
+   <Target>LSP Parametric Equalizer x32 MidSide:events-in</Target>
+  </Connection>
+  <Connection>
+   <Source>LSP Parametric Equalizer x32 MidSide:events-out</Source>
+   <Target>LSP Sidechain Compressor Stereo:events-in</Target>
+  </Connection>
+  <Connection>
+   <Source>LSP Sidechain Multiband Compressor Stereo x8:events-out</Source>
+   <Target>Calf Reverb:events-in</Target>
+  </Connection>
+ </ExternalPatchbay>
+</CARLA-PROJECT>
